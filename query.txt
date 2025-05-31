@@ -1,0 +1,18 @@
+CREATE DATABASE clinica;
+
+USE clinica;
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(25) NOT NULL
+);
+
+CREATE TABLE consultas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    paciente VARCHAR(50) NOT NULL,
+    area_atuacao VARCHAR(100) NOT NULL,
+    medico VARCHAR(50) NOT NULL,
+    horario DATETIME NOT NULL
+);
