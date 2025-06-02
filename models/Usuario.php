@@ -1,0 +1,47 @@
+<?php
+
+require_once 'config/database.php';
+
+class Usuario{
+    private $conn;
+    private $table = 'usuarios';
+
+    public function __construct(){
+        $db = new Database();
+        $this->conn = $db->conectar();
+    }
+
+    public function criar($nome, $email, $senha){
+        $sql = "INSERT INTO $this->table (nome, email, senha) VALUES (?, ?, ?)";
+        $stmt = $this->conn->prepare($sql);
+        $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+        return $stmt->execute([$nome, $email, $senhaHash]);
+    }
+
+    public function autenticar($email) {
+        $sql = "SELECT * FROM $this->table WHERE email = ?";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([$email]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function buscarPorId($id) {
+        $sql = "SELECT id, nome, email FROM $this->table WHERE id = ?";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([$id]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function atualizar($id, $nome, $email) {
+        $sql = "UPDATE $this->table SET nome = ?, email = ? WHERE id = ?";
+        $stmt = $this->conn->prepare($sql);
+        return $stmt->execute([$nome, $email, $id]);
+    }
+
+    public function excluir($id) {
+        $sql = "DELETE FROM $this->table WHERE id = ?";
+        $stmt = $this->conn->prepare($sql);
+        return $stmt->execute([$id]);
+    }
+}
+?>
