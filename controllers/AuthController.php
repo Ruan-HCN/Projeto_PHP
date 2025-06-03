@@ -1,6 +1,6 @@
 <?php
 
-require_once 'models/Usuario.php';
+require_once '../models/Usuario.php';
 
 class AuthController {
     private $usuarioModel;
@@ -11,6 +11,10 @@ class AuthController {
 
     public function login() {
         require 'views/auth/login.php';
+    }
+    
+    public function cadastro() {
+        require 'views/auth/cadastro.php';
     }
 
     public function authLogin() {
@@ -34,12 +38,15 @@ class AuthController {
     }
 
     public function authRegister() {
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
+            
+            $nome = $_POST['nome'];
+            $email = $_POST['email'];
+            $senha = $_POST['senha'];
 
-        $this->usuarioModel->criar($nome, $email, $senha);
-        header("Location: index.php?rota=login");
+            $this->usuarioModel->criar($nome, $email, $senha);
+            header("Location: index.php?rota=login");
+        }
     }
 }
 ?>
