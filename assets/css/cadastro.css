@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    max-height: 100vh;
+}
+
+h1{
+    display: flex;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}.form_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 30em;
+    width: 25em;
+    border-radius: 5%;
+    border-style: solid;
+    border-color: gray;
+    border-width: 2px;
+}form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}div p{
+    padding-top: 1em;
+}.form-control{
+    display: flex;
+    border-style: solid;
+    border-radius: 0;
+    border-width: 0px 0px 3px 0px;
+}
