@@ -8,7 +8,7 @@ class Usuario{
 
     public function __construct(){
         $db = new Database();
-        $this->conn = $db->conectar();
+        $this->conn = $db->getConnection();
     }
 
     public function criar($nome, $email, $senha){
