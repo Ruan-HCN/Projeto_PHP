@@ -33,6 +33,7 @@ main{
     align-items: center;
     justify-content: center;
     margin-top: 2em;
+    width: 20em;
 }div p{
     padding-top: 1em;
 }.form-control{
@@ -40,4 +41,10 @@ main{
     border-style: solid;
     border-radius: 0;
     border-width: 0px 0px 3px 0px;
+}.btn.btn-success{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    width: 10em;
 }
