@@ -1,6 +1,6 @@
 <?php
 
-require_once '../models/Usuario.php';
+require_once 'models/Usuario.php';
 
 class AuthController {
     private $usuarioModel;
@@ -9,12 +9,29 @@ class AuthController {
         $this->usuarioModel = new Usuario();
     }
 
+    public function register() {
+        require 'views/auth/cadastro.php';
+    }
+
+    public function authRegister() {
+        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+            $nome = $_POST['nome'];
+            $email = $_POST['email'];
+            $senha = $_POST['senha'];
+
+            $resultado = $this->usuarioModel->criar($nome, $email, $senha);
+
+            if ($resultado) {
+                header("Location: index.php?rota=login");
+                exit;
+            } else {
+                echo "Erro ao cadastrar usuário.";
+            }
+        }
+    }
+
     public function login() {
         require 'views/auth/login.php';
-    }
-    
-    public function cadastro() {
-        require 'views/auth/cadastro.php';
     }
 
     public function authLogin() {
@@ -25,27 +42,11 @@ class AuthController {
 
         if ($usuario && password_verify($senha, $usuario['senha'])) {
             session_start();
-            $_SESSION['usuario_id'] = $usuario['id'];
+            $_SESSION['usuario_id'] = $usuario['usuario_id'];
             $_SESSION['usuario_nome'] = $usuario['nome'];
-            header("Location: index.php?rota=consulta_listar");
+            header("Location: index.php?rota=dashboard");
         } else {
             echo "Email ou senha inválidos.";
-        }
-    }
-
-    public function register() {
-        require 'views/auth/register.php';
-    }
-
-    public function authRegister() {
-        if($_SERVER["REQUEST_METHOD"] == "POST"){
-            
-            $nome = $_POST['nome'];
-            $email = $_POST['email'];
-            $senha = $_POST['senha'];
-
-            $this->usuarioModel->criar($nome, $email, $senha);
-            header("Location: index.php?rota=login");
         }
     }
 }

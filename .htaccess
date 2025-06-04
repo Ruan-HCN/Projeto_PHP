@@ -1,18 +1,7 @@
-
-# IfModule garante que as regras internas a ele só serão processadas se mod_rewrite estiver habilitado no apache
 <IfModule mod_rewrite.c>
-
-    # Ativa o motor de reescrita
     RewriteEngine On
-    # Isso define o prefixo base para regras de reescrita subsequentes
-    # Se estivesse em localhost seria "RewriteBase /", mas se estiver em uma subpasta, será "RewriteBase /Meu_projeto/"
     RewriteBase /Projeto_PHP/
-    # É uma condição que contem o path do arquivo e verifica se ele existe no sistema
     RewriteCond %{REQUEST_FILENAME} !-f
-    # É uma condição que contem o path do dirtetório e verifica se ele existe no sistema
     RewriteCond %{REQUEST_FILENAME} !-d
-
-    # Expressão captura o a informação depois de /Projeto_PHP/... e reescreve a url para o arquivo index.php
     RewriteRule ^(.*)$ index.php [QSA,L]
-
 </IfModule>
