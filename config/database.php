@@ -4,10 +4,10 @@ class database{
     private $host = "localhost";
     private $db_name = "clinica";
     private $username = "root";
-    private $password = "root";
+    private $password = "";
     public $conn;
 
-    public function getConnection(){
+    public function conectar(){
         $this->conn = null;
         try{
             $this->conn = new PDO(
