@@ -3,6 +3,8 @@ session_start();
 
 require_once 'config/database.php';
 require_once 'controllers/AuthController.php';
+require_once 'controllers/UsuarioController.php';
+
 
 $rota = isset($_GET['rota']) ? $_GET['rota'] : 'login';
 
@@ -36,7 +38,23 @@ switch ($rota) {
 
     case 'dashboard':
         echo "<h1>Bem-vindo, " . $_SESSION['usuario_nome'] . "!</h1>";
+        echo "<p><a href='index.php?rota=usuario_atualizar'>atualizar</a></p>";
         echo "<p><a href='logout.php'>Sair</a></p>";
+        break;
+    
+    case 'usuario_atualizar':
+        $controller = new UsuarioController();
+        $controller->update();
+        break;
+
+    case 'usuarioUpdate_post':
+        $controller = new UsuarioController();
+        $controller->userUpdate();
+        break;
+
+    case 'usuario_excluir':
+        $controller = new UsuarioController();
+        $controller->excluir();
         break;
 
     default:
