@@ -13,7 +13,7 @@
         
        <div class="form_container">
             <h1>Registre-se</h1>
-            <form action="../../controllers/AuthController.php" method="$_POST">
+            <form action="../../index.php" method="$_POST">
 
 
                 <div class="input-group mb-3">
