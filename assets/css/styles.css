@@ -160,3 +160,49 @@ html {
         display: none; /* Ocultar imagem em telas muito pequenas se já estiver no d-none d-md-flex */
     }
 }
+
+/*
+==============================================
+--- ESTILOS ADICIONAIS PARA PÁGINA DE CADASTRO ---
+==============================================
+*/
+
+/* Título "Cadastro de Usuário" */
+.form-title {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+/* Labels dos campos (Nome, Email, Senha) */
+.form-label {
+    color: #f0f0f0; /* Um branco suave para não competir com o título */
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 10px; /* Leve alinhamento com os inputs */
+}
+
+/* Estilo para os inputs da tela de cadastro */
+/* Similar ao .form-control-custom, mas sem o espaço extra para o ícone */
+.form-control-register {
+    background-color: #FFFFFF;
+    border-radius: 25px; /* Bordas totalmente arredondadas */
+    border: 1px solid #E0E0E0;
+    height: 50px;
+    padding-left: 20px; /* Padding normal */
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.form-control-register:focus {
+    box-shadow: 0 0 0 0.25rem rgba(62, 107, 62, 0.25); /* Reutiliza o foco verde */
+    border-color: #3E6B3E;
+}
+
+.form-control-register::placeholder {
+    color: #A0A0A0; /* Reutiliza a cor do placeholder */
+}
+
+/* Texto do link "Já tem conta?" */
+.login-link-text {
+    color: #f0f0f0; /* Branco suave */
+}
