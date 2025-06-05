@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); /* Fonte similar à da imagem */
 
-body, html {
+html {
     height: 100%;
     margin: 0;
     font-family: 'Poppins', sans-serif; /* Usando Poppins */
     overflow-x: hidden; /* Evitar scroll horizontal */
+    
 }
+
+
 
 .main-container {
     min-height: 100vh;
-    background: linear-gradient(135deg, #e0f5e0, #c0e5c0); /* Gradiente verde claro suave */
+    background-image: url(../../Projeto_PHP/assets/images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     display: flex;
     align-items: stretch; /* Faz as colunas terem a mesma altura */
 }
@@ -135,7 +141,7 @@ body, html {
 
 .stethoscope-img {
     max-width: 85%; /* Controla o tamanho máximo do estetoscópio */
-    max-height: 200vh;
+    max-height: 85vh;
     object-fit: contain; /* Garante que a imagem inteira seja visível */
 }
 
