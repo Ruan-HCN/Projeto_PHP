@@ -1,0 +1,85 @@
+/* Fundo da página */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #c7e6d2, #a3c9b4);
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* Container do formulário */
+.container {
+    background-color: #5e9c75;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 400px;
+    margin: 80px auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Agrupamento dos inputs */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+/* Botão */
+button {
+    background-color: #83bfa1;
+    color: #042c1f;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6da78b;
+}
+
+/* Link para login */
+p {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+p a {
+    color: #042c1f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Projeto_PHP/assets/css/authCadastro.css">
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container">
         <h1>Cadastro de Usuário</h1>
         <form action="index.php?rota=auth_register" method="POST">
-            <div class="mb-3">
-                <label class="form-label">Nome</label>
-                <input type="text" name="nome" class="form-control" required>
+            <div class="input-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" name="email" class="form-control" required>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Senha</label>
-                <input type="password" name="senha" class="form-control" required>
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
             </div>
-            <button type="submit" class="btn btn-success">Cadastrar</button>
+            <button type="submit">Cadastrar</button>
         </form>
-        <p class="mt-3">Já tem conta? <a href="index.php?rota=login">Fazer login</a></p>
+        <p>Já tem conta? <a href="index.php?rota=login">Fazer login</a></p>
     </div>
 </body>
 </html>
