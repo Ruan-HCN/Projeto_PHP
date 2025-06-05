@@ -8,8 +8,6 @@ html {
     
 }
 
-
-
 .main-container {
     min-height: 100vh;
     background-image: url(../../Projeto_PHP/assets/images/Background.png);
@@ -65,6 +63,7 @@ html {
     font-size: 1.1rem;
     z-index: 3; /* Para garantir que o ícone fique sobre o input */
 }
+
 .input-group-custom .input-icon.bi { /* Ajuste para bootstrap icons se necessário */
     font-size: 1.2rem;
 }
