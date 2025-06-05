@@ -23,8 +23,8 @@ body, html {
 }
 
 .logo-container .logo-img {
-    width: 70px; /* Ajuste o tamanho conforme seu logo */
-    height: 70px;
+    width: 140px; /* Ajuste o tamanho conforme seu logo */
+    height: 150px;
     /* Para um placeholder SVG simples: */
     /* background-color: #4A777A;
     border-radius: 50%;
@@ -135,7 +135,7 @@ body, html {
 
 .stethoscope-img {
     max-width: 85%; /* Controla o tamanho máximo do estetoscópio */
-    max-height: 85vh;
+    max-height: 200vh;
     object-fit: contain; /* Garante que a imagem inteira seja visível */
 }
 

@@ -8,42 +8,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
+
 <body>
-    <div class="container-fluid main-container">
-        <div class="row g-0">
-            <div class="col-lg-5 col-md-6 d-flex flex-column align-items-center justify-content-center form-column p-4">
-                <div class="logo-container text-center mb-4">
-                    <img src="/Projeto_PHP/assets/images/logo_clinica-removebg.png" alt="Check-Up Time Logo" class="logo-img mb-2">
-                    <h1 class="logo-text">CHECK-UP TIME</h1>
+    <section>
+        <div class="container-fluid main-container">
+            <div class="row g-0">
+                <div class="col-lg-5 col-md-6 d-flex flex-column align-items-center justify-content-center form-column p-4">
+                    <div class="logo-container text-center mb-4">
+                        <img src="/Projeto_PHP/assets/images/logo_clinica-removebg.png" alt="Check-Up Time Logo" class="logo-img mb-2">
+                        <h1 class="logo-text">Login</h1>
+                    </div>
+
+                    <div class="login-form-wrapper p-4 p-sm-5 shadow">
+                        <form>
+                            <div class="input-group-custom mb-3">
+                                <span class="input-icon">@</span>
+                                <input type="email" class="form-control form-control-custom" placeholder="Email" aria-label="Email">
+                            </div>
+                            <div class="input-group-custom mb-4">
+                                <span class="input-icon"><i class="bi bi-lock-fill"></i></span>
+                                <input type="password" class="form-control form-control-custom" placeholder="Senha" aria-label="Senha">
+                            </div>
+                            <button type="submit" class="btn btn-entrar w-100 mb-3">Entrar</button>
+                            <div class="text-center mb-3">
+                                <a href="#" class="forgot-password-link">Esqueci minha senha</a>
+                            </div>
+                            <p class="text-center sign-up-text mb-0">
+                                Não possui conta? <a href="#" class="sign-up-link">Clique aqui</a>
+                            </p>
+                        </form>
+                    </div>
                 </div>
 
-                <div class="login-form-wrapper p-4 p-sm-5 shadow">
-                    <form>
-                        <div class="input-group-custom mb-3">
-                            <span class="input-icon">@</span>
-                            <input type="email" class="form-control form-control-custom" placeholder="Email" aria-label="Email">
-                        </div>
-                        <div class="input-group-custom mb-4">
-                            <span class="input-icon"><i class="bi bi-lock-fill"></i></span>
-                            <input type="password" class="form-control form-control-custom" placeholder="Senha" aria-label="Senha">
-                        </div>
-                        <button type="submit" class="btn btn-entrar w-100 mb-3">Entrar</button>
-                        <div class="text-center mb-3">
-                            <a href="#" class="forgot-password-link">Esqueci minha senha</a>
-                        </div>
-                        <p class="text-center sign-up-text mb-0">
-                            Não possui conta? <a href="#" class="sign-up-link">Clique aqui</a>
-                        </p>
-                    </form>
+                <div class="col-lg-7 col-md-6 d-none d-md-flex align-items-center justify-content-center image-column">
+                    <img src="/Projeto_PHP/assets/images/estetoscopio-removebg-preview.png" alt="Estetoscópio" class="stethoscope-img img-fluid">
                 </div>
-            </div>
-
-            <div class="col-lg-7 col-md-6 d-none d-md-flex align-items-center justify-content-center image-column">
-                <img src="/Projeto_PHP/assets/images/estetoscopio-removebg-preview.png" alt="Estetoscópio" class="stethoscope-img img-fluid">
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </section>
 </body>
 </html>
