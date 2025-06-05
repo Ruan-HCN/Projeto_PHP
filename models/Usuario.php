@@ -18,6 +18,15 @@ class Usuario {
         return $stmt->execute([$nome, $email, $senhaHash]);
     }
 
+    public function atualizar($user_id, $nome, $email, $senha) {
+        if ($senha) {
+            $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+            $sql = "UPDATE $this->table SET nome = ?, email = ?, senha = ? WHERE usuario_id = ?";
+            $stmt = $this->conn->prepare($sql);
+            return $stmt->execute([$nome, $email, $senhaHash, $user_id]);
+        }
+    }
+
     public function autenticar($email) {
         $sql = "SELECT * FROM $this->table WHERE email = ?";
         $stmt = $this->conn->prepare($sql);
