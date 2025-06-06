@@ -33,5 +33,29 @@ class Usuario {
         $stmt->execute([$email]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
+
+    public function deletar($user_id, $senha){
+        $sqlBuscaHash = "SELECT senha FROM usuarios WHERE usuario_id = ?";
+        $stmtBuscaHash = $this->conn->prepare($sqlBuscaHash);
+        $stmtBuscaHash->execute([$user_id]);
+        $resultado = $stmtBuscaHash->fetch(PDO::FETCH_ASSOC);
+
+        if ($resultado && isset($resultado['senha'])) {
+            $senhaHashArmazenada = $resultado['senha'];
+
+            if (password_verify($senha, $senhaHashArmazenada)) {
+                $sqlDeletar = "DELETE FROM usuarios WHERE usuario_id = ?";
+                $stmtDeletar = $this->conn->prepare($sqlDeletar);
+
+                return $stmtDeletar->execute([$user_id]); 
+            } else {
+
+                return false;
+            }
+        } else {
+            
+            return false;
+        }
+        }
 }
 ?>

@@ -9,8 +9,32 @@ class AuthController {
         $this->usuarioModel = new Usuario();
     }
 
+    //Requisições
+
     public function register() {
-        require 'views/auth/cadastro.php';
+        require 'views/auth/cadastro.html';
+    }
+
+    public function login() {
+        require 'views/auth/login.html';
+    }
+
+    // Ações
+    
+    public function authLogin() {
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+
+        $usuario = $this->usuarioModel->autenticar($email);
+
+        if ($usuario && password_verify($senha, $usuario['senha'])) {
+            session_start();
+            $_SESSION['usuario_id'] = $usuario['usuario_id'];
+            $_SESSION['usuario_nome'] = $usuario['nome'];
+            header("Location: index.php?rota=dashboard");
+        } else {
+            echo "Email ou senha inválidos.";
+        }
     }
 
     public function authRegister() {
@@ -27,26 +51,6 @@ class AuthController {
             } else {
                 echo "Erro ao cadastrar usuário.";
             }
-        }
-    }
-
-    public function login() {
-        require 'views/auth/login.php';
-    }
-
-    public function authLogin() {
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
-
-        $usuario = $this->usuarioModel->autenticar($email);
-
-        if ($usuario && password_verify($senha, $usuario['senha'])) {
-            session_start();
-            $_SESSION['usuario_id'] = $usuario['usuario_id'];
-            $_SESSION['usuario_nome'] = $usuario['nome'];
-            header("Location: index.php?rota=dashboard");
-        } else {
-            echo "Email ou senha inválidos.";
         }
     }
 }
