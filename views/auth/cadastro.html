@@ -17,17 +17,20 @@
             <form action="index.php?rota=auth_register" method="POST">
                 <div class="mb-3">
                     <label for="nomeCompleto" class="form-label">Nome Completo</label>
-                    <input type="text" class="form-control form-control-register" id="nomeCompleto" placeholder="Digite seu nome" name="nome">
+                    <input type="text" class="form-control form-control-register" id="nomeCompleto" placeholder="Digite seu nome" name="nome" data-maxlength="50">
                 </div>
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control form-control-register" id="email" placeholder="Digite seu e-mail" name="email">
+                    <input type="email" class="form-control form-control-register" id="email" placeholder="Digite seu e-mail" name="email" data-maxlength="100">
+                    <small id="email-feedback" class="form-text text-danger"></small>
                 </div>
 
                 <div class="mb-4">
                     <label for="senha" class="form-label">Senha</label>
-                    <input type="password" class="form-control form-control-register" id="senha" placeholder="Digite sua senha" name="senha">
+                    <input type="password" class="form-control form-control-register" id="senha" placeholder="Digite sua senha" name="senha" data-maxlength="20">
+                    <small id="senha-feedback" class="form-text text-muted"></small>
+                    <small id="senha-counter" class="form-text text-muted">0/20 caracteres</small>
                 </div>
 
                 <button type="submit" class="btn btn-entrar w-100 mb-3">Cadastrar</button>
@@ -43,5 +46,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Projeto_PHP/assets/js/cadastro.js"></script>
 </body>
 </html>

@@ -50,6 +50,8 @@ class UsuarioController {
             $resultado = $this->usuarioActions->deletar($user_id, $senha);
 
             if ($resultado) {
+                session_unset();
+                session_destroy();
                 header("Location: index.php?rota=dashboard");
                 exit;
             } else {
