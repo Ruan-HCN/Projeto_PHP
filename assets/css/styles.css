@@ -10,7 +10,7 @@ html {
 
 .main-container {
     min-height: 100vh;
-    background-image: url(../../Projeto_PHP/assets/images/Background.png);
+    background-image: url(/Projeto_PHP/assets/images/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

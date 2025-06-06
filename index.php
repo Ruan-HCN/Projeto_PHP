@@ -1,4 +1,9 @@
 <?php
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+//não apaga, deixa essa porra aí, é ajuda para leigos
+
 session_start();
 
 require_once 'config/database.php';
@@ -39,24 +44,30 @@ switch ($rota) {
     case 'dashboard':
         echo "<h1>Bem-vindo, " . $_SESSION['usuario_nome'] . "!</h1>";
         echo "<p><a href='index.php?rota=usuario_atualizar'>atualizar</a></p>";
+        echo "<p><a href='index.php?rota=usuario_delete'>Deletar</a></p>";
         echo "<p><a href='logout.php'>Sair</a></p>";
         break;
     
     case 'usuario_atualizar':
         $controller = new UsuarioController();
-        $controller->update();
+        $controller->require_update();
         break;
 
-    case 'usuarioUpdate_post':
+    case 'usuario_update_post':
         $controller = new UsuarioController();
-        $controller->userUpdate();
+        $controller->user_update();
         break;
-
-    case 'usuario_excluir':
+    
+    case 'usuario_delete':
         $controller = new UsuarioController();
-        $controller->excluir();
+        $controller->require_delete();
         break;
 
+    case 'usuario_delete_post':
+        $controller = new UsuarioController();
+        $controller->user_delete();
+        break;
+    
     default:
         echo "Página não encontrada!";
         break;
