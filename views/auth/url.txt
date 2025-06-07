@@ -1,1 +1,3 @@
 localhost/Projeto_PHP
+
+http://localhost/Projeto_PHP/index.php?rota=nome da rota

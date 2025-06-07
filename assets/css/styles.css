@@ -302,7 +302,7 @@ html {
 /* --- CONTEÚDO PRINCIPAL (HERO) --- */
 .main-container-home {
     min-height: 100vh;
-    background-image: url(/Projeto_PHP/assets/images/Background.png), url(/Projeto_PHP/assets/images/image_6a3b60.jpg); /* Fallback se o primeiro falhar */
+    background-image: url(/Projeto_PHP/assets/Background/Background.png), url(/Projeto_PHP/assets/images/image_6a3b60.jpg); /* Fallback se o primeiro falhar */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -317,13 +317,14 @@ html {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 45%; /* Ajuste a largura conforme necessário */
+    width: 100%; /* Ajuste a largura conforme necessário */
     height: 85%; /* Ajuste a altura conforme necessário */
-    background-image: url(/Projeto_PHP/assets/images/stethoscope-image.png); /* SUBSTITUA PELO CAMINHO CORRETO DO SEU ESTETOSCÓPIO */
+    background-image: url(/assets/images/Background.png); /* SUBSTITUA PELO CAMINHO CORRETO DO SEU ESTETOSCÓPIO */
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right bottom;
-    z-index: 1;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    
 }
 
 .hero-content {
