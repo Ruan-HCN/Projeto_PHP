@@ -10,7 +10,7 @@ html {
 
 .main-container {
     min-height: 100vh;
-    background-image: url(/Projeto_PHP/assets/images/Background.png);
+    background-image: url(/assets/images/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -102,6 +102,7 @@ html {
 .btn-entrar:hover {
     background-color: #5A7F5A; /* Tom mais escuro no hover */
     color: #FFFFFF;
+    transform: scale(1.05); /* Efeito de zoom suave */
 }
 
 .forgot-password-link {
@@ -346,7 +347,7 @@ html {
 
 .cta-wrapper {
     display: inline-block;
-    background-color: #94B994; /* Reutilizando o estilo da caixa de login */
+    background-color: #689068;/* Reutilizando o estilo da caixa de login */
     border-radius: 25px;
     padding: 20px 30px;
     margin-top: 15px;
@@ -460,4 +461,123 @@ html {
 /* Classe de utilidade para dar sombra ao texto e garantir legibilidade */
 .text-shadow-strong {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/*
+==================================================
+--- ESTILOS PARA PÁGINA DE CONSULTA (CARDS) ---
+==================================================
+*/
+
+/* Garante que o fundo cubra a página inteira */
+.body-layout {
+    background-color: #A0C4A0; /* Cor de fundo base */
+    background-image: url(/assets/images/Background.png); /* Sua imagem de fundo com estetoscópio */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Container principal da página */
+.consulta-page-container {
+    padding-top: 120px; /* Espaço para a navbar fixa */
+    padding-bottom: 60px;
+}
+
+/* Título principal da página */
+.page-title.text-white {
+    color: #FFFFFF !important; /* Força a cor branca */
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+/* Barra de busca da página */
+.page-search-form {
+    position: relative;
+    max-width: 700px;
+}
+
+.page-search-input {
+    height: 55px;
+    border-radius: 50px;
+    padding-left: 25px;
+    padding-right: 60px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+.page-search-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(62, 107, 62, 0.25);
+    border-color: #3E6B3E;
+}
+
+.page-search-btn {
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    right: 0;
+    top: 0;
+    background: none;
+    border: none;
+    color: #3E6B3E;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Estilo do Card de Consulta */
+.consulta-card {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%; /* Garante que todos os cards na mesma linha tenham a mesma altura */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo do card em coluna */
+}
+
+.consulta-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-specialty {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    flex-grow: 1; /* Faz este elemento crescer, empurrando o botão para baixo */
+}
+
+.card-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #3E6B3E;
+    margin: 0.5rem 0 1rem 0; /* Espaçamento do preço */
+}
+
+.btn-marcar {
+    background-color: #689068; /* Reutilizando a cor verde de outros botões */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px; /* Pílula */
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-marcar:hover {
+    background-color: #5A7F5A; /* Tom mais escuro no hover */
+}
+
+/* Ajustes na Navbar para esta página */
+.navbar.fixed-top {
+    position: fixed;
+    width: 100%;
+    z-index: 1030;
 }
