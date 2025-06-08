@@ -526,7 +526,7 @@ html {
     cursor: pointer;
 }
 
-/* Estilo do Card de Consulta */
+/* Estilo do Card de Consulta e Exames */
 .consulta-card {
     background-color: #FFFFFF;
     border-radius: 15px;
@@ -580,4 +580,73 @@ html {
     position: fixed;
     width: 100%;
     z-index: 1030;
+}
+
+/*
+==================================================
+--- ESTILOS PARA PÁGINA DE ATUALIZAÇÃO (MINHA CONTA) ---
+==================================================
+*/
+
+/* Container principal da página */
+.profile-page-container {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+/* Labels dos campos (Nome, Email, Senha) */
+.form-label2 {
+    color: #000000; /* Uma cor preta para não competir com o título */
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 11px; /* Leve alinhamento com os inputs */
+}
+
+/* Card branco que envolve todo o conteúdo */
+.profile-card {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Garante que o conteúdo respeite as bordas arredondadas */
+}
+
+/* Estilização customizada para as abas */
+.profile-tabs {
+    border-bottom: 1px solid #dee2e6;
+    background-color: #f8f9fa; /* Fundo levemente cinza para a área das abas */
+}
+
+.profile-tabs .nav-item .nav-link {
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: #6c757d; /* Cor do texto da aba ativa */
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.profile-tabs .nav-item .nav-link:hover {
+    color: #3E6B3E; /* Cor do texto no hover */
+}
+
+/* Estilo da aba ATIVA */
+.profile-tabs .nav-item .nav-link.active {
+    color: #3E6B3E; /* Cor do texto da aba ativa */
+    background-color: #d6d4d4;
+    border-bottom: 3px solid #689068; /* Borda verde indicando a aba ativa */
+}
+
+/* Botão de salvar alterações */
+.btn-save-changes {
+    background-color: #689068;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-save-changes:hover {
+    background-color: #5A7F5A; /* Tom mais escuro */
 }
