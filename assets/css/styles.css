@@ -330,7 +330,7 @@ html {
 .hero-content {
     position: relative;
     z-index: 2; /* Garante que o texto fique na frente do estetoscópio */
-    color: #3E6B3E;
+    color: #000000;
 }
 
 .hero-title {
@@ -358,8 +358,106 @@ html {
     font-size: 1.2rem;
     text-decoration: none;
     transition: transform 0.3s ease;
+    
 }
 .btn-cta:hover {
     color: #FFFFFF;
     transform: scale(1.05); /* Efeito de zoom suave */
+}
+
+/*
+==================================================
+--- ESTILOS PARA PÁGINA DE ATENDIMENTO ---
+==================================================
+*/
+
+.atendimento-container {
+    min-height: 100vh;
+    /* IMPORTANTE: Coloque aqui o caminho para a sua nova imagem de fundo */
+    background-image: url('/Projeto_PHP/assets/images/image_c2f358.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.atendimento-title {
+    font-weight: 700;
+    font-size: 3.5rem; /* Tamanho grande para o título */
+    color: #FFFFFF;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra para garantir a legibilidade sobre a imagem */
+}
+
+.botoes-atendimento {
+    display: flex;
+    gap: 20px; /* Espaço entre os botões */
+}
+
+.btn-agendar {
+    background-color: #689068; /* Reutilizando a cor verde do botão de entrar */
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF; /* Borda branca para destacar */
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-agendar:hover {
+    background-color: #FFFFFF;
+    color: #689068;
+    transform: translateY(-3px); /* Efeito de levantar o botão */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Ajustes para telas menores (mobile) */
+@media (max-width: 767.98px) {
+    .atendimento-title {
+        font-size: 2.5rem; /* Diminui o título no mobile */
+    }
+
+    .botoes-atendimento {
+        flex-direction: column; /* Coloca os botões um embaixo do outro */
+        width: 100%;
+        max-width: 300px; /* Limita a largura no mobile */
+    }
+
+    .btn-agendar {
+        width: 100%; /* Faz os botões ocuparem a largura total do container */
+    }
+}
+
+/*
+==================================================
+--- ESTILOS PARA PÁGINA DE ATENDIMENTO ---
+==================================================
+*/
+
+.atendimento-page-container {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%; /* Ajuste a largura conforme necessário */
+    height: 85%; /* Ajuste a altura conforme necessário */
+    background-image: url('/assets/images/Backgorund_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+/* Classe de utilidade para dar sombra ao texto e garantir legibilidade */
+.text-shadow-strong {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
