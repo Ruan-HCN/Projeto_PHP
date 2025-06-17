@@ -22,6 +22,7 @@ if (!in_array($rota, $rotasPublicas) && !isset($_SESSION['usuario_id'])) {
 }
 
 switch ($rota) {
+    // === Rotas Autenticação ===
     case 'login':
         $controller = new AuthController();
         $controller->login();
@@ -42,13 +43,12 @@ switch ($rota) {
         $controller->authRegister();
         break;
 
+    // === Dashboard ===
     case 'dashboard':
-        echo "<h1>Bem-vindo, " . $_SESSION['usuario_nome'] . "!</h1>";
-        echo "<p><a href='index.php?rota=usuario_atualizar'>atualizar</a></p>";
-        echo "<p><a href='index.php?rota=usuario_delete'>Deletar</a></p>";
-        echo "<p><a href='logout.php'>Sair</a></p>";
+        header('Location: ./views/auth/home.html');
         break;
     
+    // === Rotas de Usuario ===    
     case 'usuario_atualizar':
         $controller = new UsuarioController();
         $controller->require_update();
@@ -69,6 +69,7 @@ switch ($rota) {
         $controller->user_delete();
         break;
     
+    // === Rotas de Consulta (REQUISIÇÕES DE PÁGINAS) ===
     case 'consulta_create':
         $controller = new ConsultaController();
         $controller->require_create();
@@ -82,6 +83,27 @@ switch ($rota) {
     case 'consulta_update':
         $controller = new ConsultaController();
         $controller->require_update();
+        break;
+
+    // === Rotas de Consulta(AÇÕES POST)
+    case 'consulta_create_post':
+        $controller = new ConsultaController();
+        $controller->create();
+        break;
+
+    case 'consulta_read_list':
+        $controller = new ConsultaController();
+        $controller->read();
+        break;
+
+    case 'consulta_update_post':
+        $controller = new ConsultaController();
+        $controller->update();
+        break;
+
+    case 'consulta_delete_post':
+        $controller = new ConsultaController();
+        $controller->delete();
         break;
 
     default:

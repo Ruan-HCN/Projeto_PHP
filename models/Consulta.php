@@ -20,30 +20,30 @@ class Consulta {
     }
 
     // 🔍 Busca uma consulta específica, garantindo que pertence ao usuário
-    public function buscarPorId($id, $usuario_id) {
+    public function buscarPorId($consulta_id, $usuario_id) {
         $sql = "SELECT * FROM $this->table WHERE id = ? AND usuario_id = ?";
         $stmt = $this->conn->prepare($sql);
-        $stmt->execute([$id, $usuario_id]);
+        $stmt->execute([$consulta_id, $usuario_id]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function criar($usuario_id, $paciente, $area, $medico, $horario) {
-        $sql = "INSERT INTO $this->table (usuario_id, paciente, area, medico, horario) VALUES (?, ?, ?, ?, ?)";
+    public function criar($usuario_id, $paciente, $area_atuacao, $medico, $horario) {
+        $sql = "INSERT INTO $this->table (usuario_id, paciente, area_atuacao, medico, horario) VALUES (?, ?, ?, ?, ?)";
         $stmt = $this->conn->prepare($sql);
-        return $stmt->execute([$usuario_id, $paciente, $area, $medico, $horario]);
+        return $stmt->execute([$usuario_id, $paciente, $area_atuacao, $medico, $horario]);
     }
 
-    public function atualizar($id, $usuario_id, $paciente, $area, $medico, $horario) {
-        $sql = "UPDATE $this->table SET paciente = ?, area = ?, medico = ?, horario = ? 
+    public function atualizar($consulta_id, $usuario_id, $paciente, $area_atuacao, $medico, $horario) {
+        $sql = "UPDATE $this->table SET paciente = ?, area_atuacao = ?, medico = ?, horario = ? 
                 WHERE id = ? AND usuario_id = ?";
         $stmt = $this->conn->prepare($sql);
-        return $stmt->execute([$paciente, $area, $medico, $horario, $id, $usuario_id]);
+        return $stmt->execute([$paciente, $area_atuacao, $medico, $horario, $consulta_id, $usuario_id]);
     }
 
-    public function excluir($id, $usuario_id) {
+    public function excluir($consulta_id, $usuario_id) {
         $sql = "DELETE FROM $this->table WHERE id = ? AND usuario_id = ?";
         $stmt = $this->conn->prepare($sql);
-        return $stmt->execute([$id, $usuario_id]);
+        return $stmt->execute([$consulta_id, $usuario_id]);
     }
 }
 ?>
