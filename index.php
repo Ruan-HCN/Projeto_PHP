@@ -68,6 +68,15 @@ switch ($rota) {
         $controller = new UsuarioController();
         $controller->user_delete();
         break;
+
+    // === Rotas dashboardUsuario === //
+    case 'dashboard_usuario':
+        header('Location: ./views/usuario/dashboardUsuario.html');
+        break;
+
+    case 'api_usuario_dados':
+        require_once 'controllers/ApiUsuarioController.php';
+        break;
     
     // === Rotas de Consulta (REQUISIÇÕES DE PÁGINAS) ===
     case 'consulta_create':

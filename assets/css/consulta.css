@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding-top: 70px; /* Espaço para a navbar fixa */
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logo-img-nav {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.btn-entrar {
+    background-color: #689068;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-entrar:hover {
+    background-color: #557A55;
+    transform: scale(1.05);
+}
+
+.consulta-page-container {
+    background-image: url('/Projeto_PHP/assets/images/Backgorund_2.png');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+}
+
+form label {
+    font-weight: 600;
+}
+
+form select,
+form input,
+form button {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+form .form-label {
+    color: #333;
+}
+
+.bg-success {
+    background-color: #4CAF50 !important;
+    color: #fff;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+@media (max-width: 768px) {
+    .consulta-page-container {
+        padding-top: 30px;
+    }
+
+    .btn-entrar {
+        width: 100%;
+    }
+}

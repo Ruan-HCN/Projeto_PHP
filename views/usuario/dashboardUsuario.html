@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard do Usuário</title>
+    <link rel="stylesheet" href="/Projeto_PHP/assets/css/dashboardUsuario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo, <span id="nomeUsuario">Usuário</span>!</h1>
+
+        <div class="dados-usuario">
+            <h2>Seus Dados:</h2>
+            <p><strong>Nome:</strong> <span id="nome"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+        </div>
+
+        <div class="consultas-usuario">
+            <h2>Suas Consultas:</h2>
+            <ul id="listaConsultas"></ul>
+        </div>
+
+        <div class="acoes">
+            <a href="index.php?rota=usuario_atualizar" class="btn">Editar Conta</a>
+            <a href="index.php?rota=usuario_delete" class="btn excluir">Excluir Conta</a>
+            <a href="index.php?rota=consulta_create" class="btn">Nova Consulta</a>
+            <a href="index.php?rota=consulta_read" class="btn">Minhas Consultas</a>
+            <a href="index.php?rota=login" class="btn sair">Sair</a>
+        </div>
+    </div>
+
+    <script src="/Projeto_PHP/assets/js/dashboardUsuario.js"></script>
+</body>
+</html>
