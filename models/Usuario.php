@@ -56,6 +56,10 @@ class Usuario {
             
             return false;
         }
-        }
+    }
+
+    public function getConnection() {
+        return $this->conn;
+    }
 }
 ?>

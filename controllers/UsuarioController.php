@@ -20,6 +20,10 @@ class UsuarioController {
         require 'views/usuario/deleteUsuario.html';
     }
 
+    public function dashboard() {
+        require 'views/usuario/dashboardUsuario.html';
+    }
+
     // Ações
 
     public function user_update() {

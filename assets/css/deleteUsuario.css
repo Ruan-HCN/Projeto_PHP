@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); /* Fonte similar à da imagem */
+
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Usando Poppins */
+    overflow-x: hidden; /* Evitar scroll horizontal */
+}
+
+.main-container {
+    min-height: 100vh;
+    background-image: url('/Projeto_PHP/images/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.login-form-wrapper {
+    background-color: #94B994; /* Verde médio para a caixa do formulário */
+    border-radius: 25px; /* Bordas bem arredondadas */
+    width: 100%;
+    max-width: 400px; /* Largura máxima da caixa do formulário */
+    padding: 30px; /* Adiciona padding para o conteúdo interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+}
+
+.form-title {
+    color: #3E6B3E; /* Verde escuro para o título do formulário */
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.text-white { /* Renomeado de text-white para um nome mais descritivo se for cinza */
+    color: #505050; /* Cinza escuro para o texto de instrução */
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    color: #333; /* Cor do label da senha */
+    font-weight: 600;
+    margin-bottom: 8px; /* Espaço abaixo do label */
+}
+
+.form-control-register { /* Ajustado para um nome mais específico se necessário, ou usar form-control-custom */
+    background-color: #FFFFFF;
+    border-radius: 25px; /* Bordas totalmente arredondadas */
+    border: 1px solid #E0E0E0; /* Borda sutil */
+    height: 50px; /* Altura dos campos de input */
+    padding: 10px 20px; /* Padding interno */
+    font-size: 0.95rem;
+    color: #333;
+    width: 100%; /* Garante que o input ocupe a largura total */
+}
+
+.form-control-register:focus {
+    box-shadow: 0 0 0 0.25rem rgba(62, 107, 62, 0.25); /* Sombra de foco verde */
+    border-color: #3E6B3E;
+}
+
+.form-control-register::placeholder {
+    color: #A0A0A0; /* Cor do placeholder */
+}
+
+.btn-entrar {
+    background-color: #689068; /* Verde para o botão "Confirmar" */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px; /* Bordas arredondadas para o botão */
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adicionado transform para o zoom */
+    width: 100%; /* Garante que o botão ocupe a largura total */
+}
+
+.btn-entrar:hover {
+    background-color: #5A7F5A; /* Tom mais escuro no hover */
+    color: #FFFFFF;
+    transform: scale(1.02); /* Efeito de zoom suave, um pouco menos que o login */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 767.98px) {
+    .login-form-wrapper {
+        padding: 20px; /* Reduz o padding em telas menores */
+        margin: 20px; /* Adiciona margem para não colar nas bordas */
+    }
+    .form-title {
+        font-size: 1.5rem;
+    }
+}

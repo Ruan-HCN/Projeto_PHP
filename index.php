@@ -14,7 +14,7 @@ require_once 'controllers/ConsultaController.php';
 
 $rota = isset($_GET['rota']) ? $_GET['rota'] : 'login';
 
-$rotasPublicas = ['login', 'register', 'auth_login', 'auth_register'];
+$rotasPublicas = ['login', 'register', 'auth_login', 'auth_register', 'api_usuario_dados'];
 
 if (!in_array($rota, $rotasPublicas) && !isset($_SESSION['usuario_id'])) {
     header('Location: index.php?rota=login');
@@ -71,11 +71,14 @@ switch ($rota) {
 
     // === Rotas dashboardUsuario === //
     case 'dashboard_usuario':
-        header('Location: ./views/usuario/dashboardUsuario.html');
+        $controller = new UsuarioController();
+        $controller->dashboard();
         break;
 
     case 'api_usuario_dados':
         require_once 'controllers/ApiUsuarioController.php';
+        $controller = new ApiUsuarioController();
+        $controller->getDadosUsuario();
         break;
     
     // === Rotas de Consulta (REQUISIÇÕES DE PÁGINAS) ===
