@@ -145,20 +145,39 @@ html {
     object-fit: contain; /* Garante que a imagem inteira seja visível */
 }
 
-/* Ajustes para telas menores */
+/*
+==================================================
+--- RESPONSIVIDADE PARA PÁGINA HOME ---
+==================================================
+*/
+
+/* Para telas de tablets e celulares maiores (menores que 768px) */
 @media (max-width: 767.98px) {
-    .form-column {
-        min-height: 100vh; /* Garante que ocupe a tela toda em mobile */
-        justify-content: center; /* Centraliza o conteúdo verticalmente */
+    .hero-title {
+        font-size: 2.2rem; /* Diminui o título principal */
     }
-    .logo-container .logo-text {
-        font-size: 1.5rem;
+
+    .hero-text {
+        font-size: 1.1rem; /* Diminui o texto de apoio */
     }
-    .login-form-wrapper {
-        padding: 20px;
+
+    .cta-wrapper {
+        padding: 15px 30px; /* Diminui o padding do wrapper do botão */
     }
-    .stethoscope-img {
-        display: none; /* Ocultar imagem em telas muito pequenas se já estiver no d-none d-md-flex */
+
+    .btn-cta {
+        font-size: 1.1rem; /* Diminui a fonte do botão */
+    }
+}
+
+/* Para telas de celulares menores (menores que 480px) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem; /* Diminui ainda mais o título */
+    }
+
+    .hero-text {
+        font-size: 1rem; /* Diminui ainda mais o texto de apoio */
     }
 }
 
