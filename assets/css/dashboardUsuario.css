@@ -68,3 +68,54 @@ ul li {
 .btn.sair:hover {
     background-color: #4c5258;
 }
+
+/*
+==================================================
+--- BLOCO DE RESPONSIVIDADE ---
+==================================================
+*/
+
+/* Para Tablets e Telas Menores (largura máxima de 768px) */
+@media (max-width: 768px) {
+    /* Ajusta o container principal para telas menores */
+    .container {
+        margin: 30px 15px; /* Reduz a margem superior/inferior e adiciona margem lateral */
+        padding: 20px;     /* Reduz o padding interno */
+    }
+
+    /* Reduz o tamanho dos títulos para melhor encaixe */
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Faz os botões ocuparem a largura total para facilitar o toque em telas touch */
+    .acoes .btn {
+        display: block; /* Faz o botão ocupar a linha inteira */
+        width: 100%;    /* Garante que ocupe 100% da largura do container */
+        margin: 10px 0; /* Ajusta a margem para o layout vertical */
+        text-align: center;
+    }
+}
+
+/* Para Celulares Pequenos (largura máxima de 480px) */
+@media (max-width: 480px) {
+    /* Ajusta o container para telas bem pequenas */
+    .container {
+        margin: 20px 10px; /* Reduz ainda mais as margens */
+        padding: 15px;
+    }
+
+    /* Reduz ainda mais as fontes */
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    p, ul li {
+        font-size: 0.9rem; /* Reduz a fonte do texto geral e dos itens da lista */
+    }
+}
