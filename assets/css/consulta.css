@@ -4,7 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
     margin: 0;
-    padding-top: 70px; /* Espaço para a navbar fixa */
+    padding-top: 70px;      /* Espaço para a navbar fixa */
 }
 
 .navbar {
@@ -86,11 +86,11 @@ form .form-label {
     }
 
     .consulta-page-container {
-        padding-top: 100px; /* Aumenta o espaço para a navbar fixa não sobrepor o título */
+        padding-top: 100px;         /* Aumenta o espaço para a navbar fixa não sobrepor o título */
         padding-left: 15px;
         padding-right: 15px;
-        min-height: 100vh; /* Garante que o fundo cubra toda a tela */
-        display: block; /* Altera para block para um fluxo mais natural em mobile */
+        min-height: 100vh;          /* Garante que o fundo cubra toda a tela */
+        display: block;             /* Altera para block para um fluxo mais natural em mobile */
     }
 
     /* Ajusta o padding do formulário em si */
@@ -98,7 +98,7 @@ form .form-label {
         padding: 20px;
     }
 
-    h1, h2 { /* Supondo que a página tenha um título */
+    h1, h2 {                        
         font-size: 1.8rem;
     }
 
@@ -112,7 +112,7 @@ form .form-label {
 /* Para Celulares Pequenos (telas menores que 480px) */
 @media (max-width: 480px) {
     .consulta-page-container {
-        padding-top: 80px; /* Reduz um pouco o espaço superior */
+        padding-top: 80px;              /* Reduz um pouco o espaço superior */
     }
 
     form {

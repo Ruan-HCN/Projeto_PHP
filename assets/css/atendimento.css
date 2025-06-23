@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/* ============================== */
-/* -------- RESET GERAL --------- */
-/* ============================== */
+
+/* RESET GERAL */
+
 html {
     height: 100%;
     margin: 0;
@@ -15,13 +15,13 @@ body {
     padding: 0;
 }
 
-/* ========================================== */
-/* --------- CONTAINER PRINCIPAL ------------ */
-/* ========================================== */
+
+/* CONTAINER PRINCIPAL */
+
 .atendimento-page-container {
     position: relative;
     width: 100%;
-    min-height: calc(100vh - 70px); /* Altura total menos altura da navbar (ajuste conforme a altura real) */
+    min-height: calc(100vh - 70px);         /* Altura total menos altura da navbar (ajuste conforme a altura real) */
     background-image: url('../images/Backgorund_2.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,9 +32,9 @@ body {
     padding: 20px;
 }
 
-/* =========================================== */
-/* --------- TÍTULO E TEXTOS ---------------- */
-/* =========================================== */
+
+/* TÍTULO E TEXTOS */
+
 .hero-title {
     font-weight: 700;
     font-size: 3rem;
@@ -46,9 +46,9 @@ body {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-/* ========================================== */
-/* --------- BOTÕES PRINCIPAIS -------------- */
-/* ========================================== */
+
+/* BOTÕES PRINCIPAIS */
+
 .btn-entrar {
     background-color: #689068;
     color: #FFFFFF;
@@ -73,7 +73,7 @@ body {
 /* Para Tablets e Celulares (telas menores que 768px) */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2.5rem; /* Reduz o título para tablets */
+        font-size: 2.5rem;      /* Reduz o título para tablets */
     }
 
     /* Empilha os botões verticalmente */
@@ -86,7 +86,7 @@ body {
     /* Ajusta o tamanho dos botões */
     .btn-entrar {
         width: 100%;
-        max-width: 320px; /* Define uma largura máxima para os botões */
+        max-width: 320px;       /* Define uma largura máxima para os botões */
         padding: 12px 30px;
         font-size: 1rem;
     }
@@ -100,14 +100,14 @@ body {
     }
 
     .hero-title {
-        font-size: 2rem; /* Reduz ainda mais o título para celulares */
+        font-size: 2rem;        /* Reduz ainda mais o título para celulares */
         margin-bottom: 20px;
     }
 }
 
-/* ============================================== */
-/* --------- HEADER NAVBAR AJUSTES -------------- */
-/* ============================================== */
+
+/*HEADER NAVBAR AJUSTES */
+
 .navbar {
     margin-bottom: 0;
     padding: 10px 20px;
@@ -135,9 +135,9 @@ body {
     color: #333333;
 }
 
-/* ============================================ */
-/* --------- LOGO NAVBAR ---------------------- */
-/* ============================================ */
+
+/* LOGO NAVBAR */
+
 .logo-img-nav {
     width: 50px;
     height: auto;
@@ -151,9 +151,8 @@ body {
     letter-spacing: 1px;
 }
 
-/* ============================================== */
-/* --------- DROPDOWN MENU ---------------------- */
-/* ============================================== */
+
+/* DROPDOWN MENu*/
 .dropdown-menu {
     background-color: #F8F9FA;
     border-radius: 10px;
@@ -163,7 +162,3 @@ body {
     background-color: #E9ECEF;
     color: #3E6B3E;
 }
-
-/* ============================================== */
-/* --------- FINAL DO CSS ---------------------- */
-/* ============================================== */

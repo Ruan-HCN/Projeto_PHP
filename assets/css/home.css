@@ -3,8 +3,8 @@
 html {
     height: 100%;
     margin: 0;
-    font-family: 'Poppins', sans-serif; /* Usando Poppins */
-    overflow-x: hidden; /* Evitar scroll horizontal */
+    font-family: 'Poppins', sans-serif;         /* Usando Poppins */
+    overflow-x: hidden;                         /* Evitar scroll horizontal */
     
 }
 
@@ -15,39 +15,35 @@ html {
     background-size: cover;
     background-position: center center;
     display: flex;
-    align-items: stretch; /* Faz as colunas terem a mesma altura */
+    align-items: stretch;                       /* Faz as colunas terem a mesma altura */
 }
 
 .row.g-0 {
-    flex-grow: 1; /* Permite que a row ocupe todo o espaço do container */
+    flex-grow: 1;                           /* Permite que a row ocupe todo o espaço do container */
 }
 
 .form-column {
-    background-color: transparent; /* A coluna do formulário em si é transparente */
+    background-color: transparent;          /* A coluna do formulário em si é transparente */
 }
 
 .logo-container .logo-img {
-    width: 140px; /* Ajuste o tamanho conforme seu logo */
+    width: 140px;                   /* Ajuste o tamanho conforme seu logo */
     height: 150px;
-    /* Para um placeholder SVG simples: */
-    /* background-color: #4A777A;
-    border-radius: 50%;
-    display: inline-block; */
-    /* Se estiver usando um SVG real, essas propriedades de background podem não ser necessárias */
+
 }
 
 .logo-container .logo-text {
-    color: #3E6B3E; /* Verde escuro para o texto do logo */
+    color: #3E6B3E;                /* Verde escuro para o texto do logo */
     font-weight: 700;
-    font-size: 1.8rem; /* Tamanho da fonte para "CHECK-UP TIME" */
+    font-size: 1.8rem;               /* Tamanho da fonte para "CHECK-UP TIME" */
     letter-spacing: 1px;
 }
 
 .login-form-wrapper {
-    background-color: #94B994; /* Verde médio para a caixa do formulário */
-    border-radius: 25px; /* Bordas bem arredondadas */
+    background-color: #94B994;      /* Verde médio para a caixa do formulário */
+    border-radius: 25px;              /* Bordas bem arredondadas */
     width: 100%;
-    max-width: 400px; /* Largura máxima da caixa do formulário */
+    max-width: 400px;                 /* Largura máxima da caixa do formulário */
 }
 
 .input-group-custom {
@@ -59,22 +55,22 @@ html {
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    color: #757575; /* Cor cinza para os ícones */
+    color: #757575;                /* Cor cinza para os ícones */
     font-size: 1.1rem;
-    z-index: 3; /* Para garantir que o ícone fique sobre o input */
+    z-index: 3;                      /* Para garantir que o ícone fique sobre o input */
 }
 
-.input-group-custom .input-icon.bi { /* Ajuste para bootstrap icons se necessário */
+.input-group-custom .input-icon.bi {
     font-size: 1.2rem;
 }
 
 
 .form-control-custom {
     background-color: #FFFFFF;
-    border-radius: 25px; /* Bordas totalmente arredondadas */
-    border: 1px solid #E0E0E0; /* Borda sutil, quase invisível */
-    height: 50px; /* Altura dos campos de input */
-    padding-left: 50px; /* Espaço para o ícone */
+    border-radius: 25px;                /* Bordas totalmente arredondadas */
+    border: 1px solid #E0E0E0;        /* Borda sutil, quase invisível */
+    height: 50px;                       /* Altura dos campos de input */
+    padding-left: 50px;                 /* Espaço para o ícone */
     font-size: 0.95rem;
     color: #333;
 }
@@ -85,14 +81,14 @@ html {
 }
 
 .form-control-custom::placeholder {
-    color: #A0A0A0; /* Cor do placeholder */
+    color: #A0A0A0;
 }
 
 .btn-entrar {
-    background-color: #689068; /* Verde para o botão "Entrar" */
+    background-color: #689068;          /* Verde para o botão "Entrar" */
     color: #FFFFFF;
     border: none;
-    border-radius: 10px; /* Bordas arredondadas para o botão */
+    border-radius: 10px;                  /* Bordas arredondadas para o botão */
     padding: 12px 0;
     font-weight: 600;
     font-size: 1rem;
@@ -100,35 +96,35 @@ html {
 }
 
 .btn-entrar:hover {
-    background-color: #5A7F5A; /* Tom mais escuro no hover */
+    background-color: #5A7F5A;        /* Tom mais escuro no hover */
     color: #FFFFFF;
-    transform: scale(1.05); /* Efeito de zoom suave */
+    transform: scale(1.05);             /* Efeito de zoom suave */
 }
 
 .forgot-password-link {
-    color: #505050; /* Cinza escuro para o link "Esqueci minha senha" */
+    color: #505050;                   /* Cinza escuro para o link "Esqueci minha senha" */
     text-decoration: none;
     font-size: 0.85rem;
 }
 
 .forgot-password-link:hover {
-    color: #3E6B3E; /* Verde escuro no hover */
+    color: #3E6B3E;                   /* Verde escuro no hover */
     text-decoration: underline;
 }
 
 .sign-up-text {
-    color: #505050; /* Cinza escuro */
+    color: #505050;         /* Cinza escuro */
     font-size: 0.9rem;
 }
 
 .sign-up-link {
-    color: #3E6B3E; /* Verde escuro para o link "Clique aqui" */
+    color: #3E6B3E;         /* Verde escuro para o link "Clique aqui" */
     font-weight: 600;
     text-decoration: none;
 }
 
 .sign-up-link:hover {
-    color: #305230; /* Tom mais escuro no hover */
+    color: #305230;         /* Tom mais escuro no hover */
     text-decoration: underline;
 }
 
@@ -136,13 +132,13 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Espaçamento para não colar nas bordas */
+    padding: 20px;              /* Espaçamento para não colar nas bordas */
 }
 
 .stethoscope-img {
-    max-width: 85%; /* Controla o tamanho máximo do estetoscópio */
+    max-width: 85%;         /* Controla o tamanho máximo do estetoscópio */
     max-height: 85vh;
-    object-fit: contain; /* Garante que a imagem inteira seja visível */
+    object-fit: contain;    /* Garante que a imagem inteira seja visível */
 }
 
 /*RESPONSIVIDADE*/
@@ -177,11 +173,7 @@ html {
     }
 }
 
-/*
-==============================================
---- ESTILOS ADICIONAIS PARA PÁGINA HOME ---
-==============================================
-*/
+/*ESTILOS ADICIONAIS PARA PÁGINA HOME*/
 
 /* --- BARRA DE NAVEGAÇÃO --- */
 .navbar {
@@ -195,7 +187,7 @@ html {
 }
 
 .logo-img-nav {
-    width: 50px; /* Tamanho menor para o logo na nav */
+    width: 50px;        /* Tamanho menor para o logo na nav */
     height: auto;
     margin-right: 10px;
 }
@@ -239,7 +231,7 @@ html {
     background: none;
     border: none;
     color: #3E6B3E;
-    font-size: 2rem; /* Tamanho dos ícones de home e menu */
+    font-size: 2rem;        /* Tamanho dos ícones de home e menu */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -269,7 +261,7 @@ html {
     border-top: 1px solid #e9ecef;
 }
 
-/* --- CONTEÚDO PRINCIPAL (HERO) --- */
+/* --- CONTEÚDO PRINCIPAL --- */
 .main-container-home {
     min-height: 100vh;
     background-image: url(/Projeto_PHP/assets/Background/Background.png), url(/Projeto_PHP/assets/images/image_6a3b60.jpg); /* Fallback se o primeiro falhar */
@@ -287,9 +279,9 @@ html {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 100%; /* Ajuste a largura conforme necessário */
-    height: 85%; /* Ajuste a altura conforme necessário */
-    background-image: url(/Projeto_PHP/assets/images/Background.png); /* SUBSTITUA PELO CAMINHO CORRETO DO SEU ESTETOSCÓPIO */
+    width: 100%;        /* Ajuste a largura conforme necessário */
+    height: 85%;        /* Ajuste a altura conforme necessário */
+    background-image: url(/Projeto_PHP/assets/images/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -299,7 +291,7 @@ html {
 
 .hero-content {
     position: relative;
-    z-index: 2; /* Garante que o texto fique na frente do estetoscópio */
+    z-index: 2;         /* Garante que o texto fique na frente da imagem ao fundo. */
     color: #000000;
 }
 
@@ -316,7 +308,7 @@ html {
 
 .cta-wrapper {
     display: inline-block;
-    background-color: #689068;/* Reutilizando o estilo da caixa de login */
+    background-color: #689068;      /* Reutilizando o estilo da caixa de login */
     border-radius: 25px;
     padding: 20px 30px;
     margin-top: 15px;
@@ -332,5 +324,5 @@ html {
 }
 .btn-cta:hover {
     color: #FFFFFF;
-    transform: scale(1.05); /* Efeito de zoom suave */
+    transform: scale(1.05);         /* Efeito de zoom suave */
 }

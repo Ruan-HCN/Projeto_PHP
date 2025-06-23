@@ -4,7 +4,7 @@ html {
     height: 100%;
     margin: 0;
     font-family: 'Poppins', sans-serif; /* Usando Poppins */
-    overflow-x: hidden; /* Evitar scroll horizontal */
+    overflow-x: hidden;                 /* Evitar scroll horizontal */
     
 }
 
@@ -15,39 +15,35 @@ html {
     background-size: cover;
     background-position: center center;
     display: flex;
-    align-items: stretch; /* Faz as colunas terem a mesma altura */
+    align-items: stretch;               /* Faz as colunas terem a mesma altura */
 }
 
 .row.g-0 {
-    flex-grow: 1; /* Permite que a row ocupe todo o espaço do container */
+    flex-grow: 1;                       /* Permite que a row ocupe todo o espaço do container */
 }
 
 .form-column {
-    background-color: transparent; /* A coluna do formulário em si é transparente */
+    background-color: transparent;      /* A coluna do formulário em si é transparente */
 }
 
 .logo-container .logo-img {
-    width: 140px; /* Ajuste o tamanho conforme seu logo */
+    width: 140px;           /* Ajuste o tamanho conforme seu logo */
     height: 150px;
-    /* Para um placeholder SVG simples: */
-    /* background-color: #4A777A;
-    border-radius: 50%;
-    display: inline-block; */
-    /* Se estiver usando um SVG real, essas propriedades de background podem não ser necessárias */
+ 
 }
 
 .logo-container .logo-text {
-    color: #3E6B3E; /* Verde escuro para o texto do logo */
+    color: #3E6B3E;       /* Verde escuro para o texto do logo */
     font-weight: 700;
-    font-size: 1.8rem; /* Tamanho da fonte para "CHECK-UP TIME" */
+    font-size: 1.8rem;      /* Tamanho da fonte para "CHECK-UP TIME" */
     letter-spacing: 1px;
 }
 
 .login-form-wrapper {
-    background-color: #94B994; /* Verde médio para a caixa do formulário */
-    border-radius: 25px; /* Bordas bem arredondadas */
+    background-color: #94B994;    /* Verde médio para a caixa do formulário */
+    border-radius: 25px;            /* Bordas bem arredondadas */
     width: 100%;
-    max-width: 400px; /* Largura máxima da caixa do formulário */
+    max-width: 400px;               /* Largura máxima da caixa do formulário */
 }
 
 .input-group-custom {
@@ -59,22 +55,22 @@ html {
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    color: #757575; /* Cor cinza para os ícones */
+    color: #757575;                 /* Cor cinza para os ícones */
     font-size: 1.1rem;
-    z-index: 3; /* Para garantir que o ícone fique sobre o input */
+    z-index: 3;                       /* Para garantir que o ícone fique sobre o input */
 }
 
-.input-group-custom .input-icon.bi { /* Ajuste para bootstrap icons se necessário */
+.input-group-custom .input-icon.bi {  /* Ajuste para bootstrap icons se necessário */
     font-size: 1.2rem;
 }
 
 
 .form-control-custom {
     background-color: #FFFFFF;
-    border-radius: 25px; /* Bordas totalmente arredondadas */
-    border: 1px solid #E0E0E0; /* Borda sutil, quase invisível */
-    height: 50px; /* Altura dos campos de input */
-    padding-left: 50px; /* Espaço para o ícone */
+    border-radius: 25px;               /* Bordas totalmente arredondadas */
+    border: 1px solid #E0E0E0;       /* Borda sutil, quase invisível */
+    height: 50px;                      /* Altura dos campos de input */
+    padding-left: 50px;                /* Espaço para o ícone */
     font-size: 0.95rem;
     color: #333;
 }
@@ -85,14 +81,14 @@ html {
 }
 
 .form-control-custom::placeholder {
-    color: #A0A0A0; /* Cor do placeholder */
+    color: #A0A0A0;             /* Cor do placeholder */
 }
 
 .btn-entrar {
-    background-color: #689068; /* Verde para o botão "Entrar" */
+    background-color: #689068;  /* Verde para o botão "Entrar" */
     color: #FFFFFF;
     border: none;
-    border-radius: 10px; /* Bordas arredondadas para o botão */
+    border-radius: 10px;          /* Bordas arredondadas para o botão */
     padding: 12px 0;
     font-weight: 600;
     font-size: 1rem;
@@ -102,33 +98,33 @@ html {
 .btn-entrar:hover {
     background-color: #5A7F5A; /* Tom mais escuro no hover */
     color: #FFFFFF;
-    transform: scale(1.05); /* Efeito de zoom suave */
+    transform: scale(1.05);      /* Efeito de zoom suave */
 }
 
 .forgot-password-link {
-    color: #505050; /* Cinza escuro para o link "Esqueci minha senha" */
+    color: #505050;            /* Cinza escuro para o link "Esqueci minha senha" */
     text-decoration: none;
     font-size: 0.85rem;
 }
 
 .forgot-password-link:hover {
-    color: #3E6B3E; /* Verde escuro no hover */
+    color: #3E6B3E;            /* Verde escuro no hover */
     text-decoration: underline;
 }
 
 .sign-up-text {
-    color: #505050; /* Cinza escuro */
+    color: #505050;             /* Cinza escuro */
     font-size: 0.9rem;
 }
 
 .sign-up-link {
-    color: #3E6B3E; /* Verde escuro para o link "Clique aqui" */
+    color: #3E6B3E;         /* Verde escuro para o link "Clique aqui" */
     font-weight: 600;
     text-decoration: none;
 }
 
 .sign-up-link:hover {
-    color: #305230; /* Tom mais escuro no hover */
+    color: #305230;         /* Tom mais escuro no hover */
     text-decoration: underline;
 }
 
@@ -136,20 +132,20 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Espaçamento para não colar nas bordas */
+    padding: 20px;             /* Espaçamento para não colar nas bordas */
 }
 
 .stethoscope-img {
-    max-width: 85%; /* Controla o tamanho máximo do estetoscópio */
+    max-width: 85%;             /* Controla o tamanho máximo do estetoscópio */
     max-height: 85vh;
-    object-fit: contain; /* Garante que a imagem inteira seja visível */
+    object-fit: contain;        /* Garante que a imagem inteira seja visível */
 }
 
 /* Ajustes para telas menores */
 @media (max-width: 767.98px) {
     .form-column {
-        min-height: 100vh; /* Garante que ocupe a tela toda em mobile */
-        justify-content: center; /* Centraliza o conteúdo verticalmente */
+        min-height: 100vh;          /* Garante que ocupe a tela toda em mobile */
+        justify-content: center;    /* Centraliza o conteúdo verticalmente */
     }
     .logo-container .logo-text {
         font-size: 1.5rem;
@@ -158,7 +154,7 @@ html {
         padding: 20px;
     }
     .stethoscope-img {
-        display: none; /* Ocultar imagem em telas muito pequenas se já estiver no d-none d-md-flex */
+        display: none;              /* Ocultar imagem em telas muito pequenas se já estiver no d-none d-md-flex */
     }
 }
 
@@ -172,20 +168,19 @@ html {
 
 /* Labels dos campos (Nome, Email, Senha) */
 .form-label {
-    color: #f0f0f0; /* Um branco suave para não competir com o título */
+    color: #f0f0f0;             /* Um branco suave para não competir com o título */
     font-size: 0.9rem;
     font-weight: 600;
-    margin-left: 10px; /* Leve alinhamento com os inputs */
+    margin-left: 10px;              /* Leve alinhamento com os inputs */
 }
 
 /* Estilo para os inputs da tela de cadastro */
-/* Similar ao .form-control-custom, mas sem o espaço extra para o ícone */
 .form-control-register {
     background-color: #FFFFFF;
-    border-radius: 25px; /* Bordas totalmente arredondadas */
+    border-radius: 25px;            /* Bordas totalmente arredondadas */
     border: 1px solid #E0E0E0;
     height: 50px;
-    padding-left: 20px; /* Padding normal */
+    padding-left: 20px;             /* Padding normal */
     font-size: 0.95rem;
     color: #333;
 }
@@ -196,12 +191,12 @@ html {
 }
 
 .form-control-register::placeholder {
-    color: #A0A0A0; /* Reutiliza a cor do placeholder */
+    color: #A0A0A0;             /* Reutiliza a cor do placeholder */
 }
 
 /* Texto do link "Já tem conta?" */
 .login-link-text {
-    color: #f0f0f0; /* Branco suave */
+    color: #f0f0f0;
 }
 
 /*RESPONSIVIDADE PARA PÁGINA DE CADASTRO*/
@@ -209,33 +204,29 @@ html {
 /* Para Tablets e Celulares (telas menores que 768px) */
 @media (max-width: 767.98px) {
 
-    /* Na página de cadastro, o formulário é centralizado.
-       A classe .main-container do seu base.css já faz isso.
-       Aqui, apenas garantimos que a caixa do formulário não cole nas bordas. */
     .login-form-wrapper {
         margin: 20px;
         padding: 25px;
     }
 }
 
-
 /* Para Celulares Pequenos (telas menores que 480px) */
 @media (max-width: 480px) {
 
     .login-form-wrapper {
-        padding: 20px; /* Reduz um pouco mais o padding interno */
+        padding: 20px;          /* Reduz um pouco mais o padding interno */
     }
 
     .form-title {
-        font-size: 1.5rem; /* Diminui o título principal */
+        font-size: 1.5rem;      /* Diminui o título principal */
     }
 
     .form-label {
-        font-size: 0.85rem; /* Diminui o rótulo dos campos */
+        font-size: 0.85rem;     /* Diminui o rótulo dos campos */
     }
     
     .form-control-register {
-        height: 45px; /* Altura dos campos um pouco menor */
+        height: 45px;           /* Altura dos campos um pouco menor */
         font-size: 0.9rem;
     }
 }
