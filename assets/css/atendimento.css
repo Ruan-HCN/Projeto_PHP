@@ -68,31 +68,40 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* ========================================= */
-/* --------- RESPONSIVIDADE ---------------- */
-/* ========================================= */
-@media (max-width: 767.98px) {
+/*BLOCO DE RESPONSIVIDADE*/
+
+/* Para Tablets e Celulares (telas menores que 768px) */
+@media (max-width: 768px) {
     .hero-title {
-        font-size: 2rem;
-        text-align: center;
+        font-size: 2.5rem; /* Reduz o título para tablets */
     }
 
-    .atendimento-page-container {
-        height: auto;
-        position: relative;
-        padding-top: 50px;
-        padding-bottom: 50px;
+    /* Empilha os botões verticalmente */
+    .botoes-atendimento {
+        flex-direction: column; /* Coloca um botão embaixo do outro */
+        align-items: center;    /* Centraliza os botões empilhados */
+        gap: 15px !important;   /* Ajusta o espaço entre os botões na vertical */
     }
 
-    .d-flex.flex-wrap.justify-content-center.gap-3.mt-4 {
-        flex-direction: column;
-        align-items: center;
-    }
-
+    /* Ajusta o tamanho dos botões */
     .btn-entrar {
-        width: 80%;
-        max-width: 300px;
-        text-align: center;
+        width: 100%;
+        max-width: 320px; /* Define uma largura máxima para os botões */
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* Para Celulares Pequenos (telas menores que 480px) */
+@media (max-width: 480px) {
+    .atendimento-page-container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .hero-title {
+        font-size: 2rem; /* Reduz ainda mais o título para celulares */
+        margin-bottom: 20px;
     }
 }
 
