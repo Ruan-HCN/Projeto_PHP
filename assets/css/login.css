@@ -145,11 +145,7 @@ html {
     object-fit: contain; /* Garante que a imagem inteira seja visível */
 }
 
-/*
-==============================================
---- REGRAS DE RESPONSIVIDADE ---
-==============================================
-*/
+/*RESPONSIVIDADE*/
 
 /* Para Tablets e Telas Menores (a partir de 768px para baixo) */
 @media (max-width: 767.98px) {

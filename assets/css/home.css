@@ -145,11 +145,7 @@ html {
     object-fit: contain; /* Garante que a imagem inteira seja visível */
 }
 
-/*
-==================================================
---- RESPONSIVIDADE PARA PÁGINA HOME ---
-==================================================
-*/
+/*RESPONSIVIDADE*/
 
 /* Para telas de tablets e celulares maiores (menores que 768px) */
 @media (max-width: 767.98px) {

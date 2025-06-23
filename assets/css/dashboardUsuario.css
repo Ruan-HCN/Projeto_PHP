@@ -69,11 +69,7 @@ ul li {
     background-color: #4c5258;
 }
 
-/*
-==================================================
---- BLOCO DE RESPONSIVIDADE ---
-==================================================
-*/
+/*RESPONSIVIDADE*/
 
 /* Para Tablets e Telas Menores (largura máxima de 768px) */
 @media (max-width: 768px) {

@@ -85,3 +85,59 @@ form .form-label {
         width: 100%;
     }
 }
+
+
+/*RESPONSIVIDADE*/
+
+/* Para Tablets e Celulares (telas menores que 768px) */
+@media (max-width: 768px) {
+    body {
+        /* Remove o padding fixo e deixa o container principal cuidar do espaçamento */
+        padding-top: 0; 
+    }
+
+    .consulta-page-container {
+        padding-top: 100px; /* Aumenta o espaço para a navbar fixa não sobrepor o título */
+        padding-left: 15px;
+        padding-right: 15px;
+        min-height: 100vh; /* Garante que o fundo cubra toda a tela */
+        display: block; /* Altera para block para um fluxo mais natural em mobile */
+    }
+
+    /* Ajusta o padding do formulário em si */
+    form {
+        padding: 20px;
+    }
+
+    h1, h2 { /* Supondo que a página tenha um título */
+        font-size: 1.8rem;
+    }
+
+    /* Deixa o botão com 100% de largura, o que você já tinha feito. Ótimo! */
+    .btn-entrar {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/* Para Celulares Pequenos (telas menores que 480px) */
+@media (max-width: 480px) {
+    .consulta-page-container {
+        padding-top: 80px; /* Reduz um pouco o espaço superior */
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Reduz o espaçamento entre os campos do formulário */
+    form select,
+    form input,
+    form button {
+        margin-bottom: 10px;
+    }
+}
