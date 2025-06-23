@@ -3,8 +3,8 @@
 html {
     height: 100%;
     margin: 0;
-    font-family: 'Poppins', sans-serif; /* Usando Poppins */
-    overflow-x: hidden; /* Evitar scroll horizontal */
+    font-family: 'Poppins', sans-serif;     /* Usando Poppins */
+    overflow-x: hidden;                     /* Evitar scroll horizontal */
     
 }
 
@@ -15,39 +15,35 @@ html {
     background-size: cover;
     background-position: center center;
     display: flex;
-    align-items: stretch; /* Faz as colunas terem a mesma altura */
+    align-items: stretch;                   /* Faz as colunas terem a mesma altura */
 }
 
 .row.g-0 {
-    flex-grow: 1; /* Permite que a row ocupe todo o espaço do container */
+    flex-grow: 1;                           /* Permite que a row ocupe todo o espaço do container */
 }
 
 .form-column {
-    background-color: transparent; /* A coluna do formulário em si é transparente */
+    background-color: transparent;          /* A coluna do formulário em si é transparente */
 }
 
 .logo-container .logo-img {
-    width: 140px; /* Ajuste o tamanho conforme seu logo */
+    width: 140px;                           /* Ajuste o tamanho conforme logo */
     height: 150px;
-    /* Para um placeholder SVG simples: */
-    /* background-color: #4A777A;
-    border-radius: 50%;
-    display: inline-block; */
-    /* Se estiver usando um SVG real, essas propriedades de background podem não ser necessárias */
+ 
 }
 
 .logo-container .logo-text {
-    color: #3E6B3E; /* Verde escuro para o texto do logo */
+    color: #3E6B3E;                       /* Verde escuro para o texto do logo */
     font-weight: 700;
-    font-size: 1.8rem; /* Tamanho da fonte para "CHECK-UP TIME" */
+    font-size: 1.8rem;                      /* Tamanho da fonte para "CHECK-UP TIME" */
     letter-spacing: 1px;
 }
 
 .login-form-wrapper {
-    background-color: #94B994; /* Verde médio para a caixa do formulário */
-    border-radius: 25px; /* Bordas bem arredondadas */
+    background-color: #94B994;            /* Verde médio para a caixa do formulário */
+    border-radius: 25px;                    /* Bordas bem arredondadas */
     width: 100%;
-    max-width: 400px; /* Largura máxima da caixa do formulário */
+    max-width: 400px;                       /* Largura máxima da caixa do formulário */
 }
 
 .input-group-custom {
@@ -59,22 +55,22 @@ html {
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    color: #757575; /* Cor cinza para os ícones */
+    color: #757575;                        /* Cor cinza para os ícones */
     font-size: 1.1rem;
-    z-index: 3; /* Para garantir que o ícone fique sobre o input */
+    z-index: 3;                              /* Para garantir que o ícone fique sobre o input */
 }
 
-.input-group-custom .input-icon.bi { /* Ajuste para bootstrap icons se necessário */
+.input-group-custom .input-icon.bi {         /* Ajuste para bootstrap icons se necessário */
     font-size: 1.2rem;
 }
 
 
 .form-control-custom {
     background-color: #FFFFFF;
-    border-radius: 25px; /* Bordas totalmente arredondadas */
-    border: 1px solid #E0E0E0; /* Borda sutil, quase invisível */
-    height: 50px; /* Altura dos campos de input */
-    padding-left: 50px; /* Espaço para o ícone */
+    border-radius: 25px;                      /* Bordas totalmente arredondadas */
+    border: 1px solid #E0E0E0;              /* Borda sutil, quase invisível */
+    height: 50px;                             /* Altura dos campos de input */
+    padding-left: 50px;                       /* Espaço para o ícone */
     font-size: 0.95rem;
     color: #333;
 }
@@ -85,14 +81,14 @@ html {
 }
 
 .form-control-custom::placeholder {
-    color: #A0A0A0; /* Cor do placeholder */
+    color: #A0A0A0;                         /* Cor do placeholder */
 }
 
 .btn-entrar {
-    background-color: #689068; /* Verde para o botão "Entrar" */
+    background-color: #689068;              /* Verde para o botão "Entrar" */
     color: #FFFFFF;
     border: none;
-    border-radius: 10px; /* Bordas arredondadas para o botão */
+    border-radius: 10px;                      /* Bordas arredondadas para o botão */
     padding: 12px 0;
     font-weight: 600;
     font-size: 1rem;
@@ -100,35 +96,35 @@ html {
 }
 
 .btn-entrar:hover {
-    background-color: #5A7F5A; /* Tom mais escuro no hover */
+    background-color: #5A7F5A;              /* Tom mais escuro no hover */
     color: #FFFFFF;
-    transform: scale(1.05); /* Efeito de zoom suave */
+    transform: scale(1.05);                   /* Efeito de zoom suave */
 }
 
 .forgot-password-link {
-    color: #505050; /* Cinza escuro para o link "Esqueci minha senha" */
+    color: #505050;                         /* Cinza escuro para o link "Esqueci minha senha" */
     text-decoration: none;
     font-size: 0.85rem;
 }
 
 .forgot-password-link:hover {
-    color: #3E6B3E; /* Verde escuro no hover */
+    color: #3E6B3E;                         /* Verde escuro no hover */
     text-decoration: underline;
 }
 
 .sign-up-text {
-    color: #505050; /* Cinza escuro */
+    color: #505050;                         /* Cinza escuro */
     font-size: 0.9rem;
 }
 
 .sign-up-link {
-    color: #3E6B3E; /* Verde escuro para o link "Clique aqui" */
+    color: #3E6B3E;                         /* Verde escuro para o link "Clique aqui" */
     font-weight: 600;
     text-decoration: none;
 }
 
 .sign-up-link:hover {
-    color: #305230; /* Tom mais escuro no hover */
+    color: #305230;                         /* Tom mais escuro no hover */
     text-decoration: underline;
 }
 
@@ -136,60 +132,40 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Espaçamento para não colar nas bordas */
+    padding: 20px;                            /* Espaçamento para não colar nas bordas */
 }
 
 .stethoscope-img {
-    max-width: 85%; /* Controla o tamanho máximo do estetoscópio */
+    max-width: 85%;             /* Controla o tamanho máximo do estetoscópio */
     max-height: 85vh;
-    object-fit: contain; /* Garante que a imagem inteira seja visível */
+    object-fit: contain;        /* Garante que a imagem inteira seja visível */
 }
 
-/* Ajustes para telas menores */
-@media (max-width: 767.98px) {
-    .form-column {
-        min-height: 100vh; /* Garante que ocupe a tela toda em mobile */
-        justify-content: center; /* Centraliza o conteúdo verticalmente */
-    }
-    .logo-container .logo-text {
-        font-size: 1.5rem;
-    }
-    .login-form-wrapper {
-        padding: 20px;
-    }
-    .stethoscope-img {
-        display: none; /* Ocultar imagem em telas muito pequenas se já estiver no d-none d-md-flex */
-    }
-}
 
-/*
-==============================================
---- ESTILOS ADICIONAIS PARA PÁGINA DE CADASTRO ---
-==============================================
-*/
+/*ESTILOS ADICIONAIS PARA PÁGINA DE CADASTRO*/
 
-/* Título "Cadastro de Usuário" */
+/* Título Cadastro de Usuário */
 .form-title {
     color: #FFFFFF;
     font-weight: 700;
 }
 
-/* Labels dos campos (Nome, Email, Senha) */
+/* Labels dos campos Nome, Email, Senha */
 .form-label {
-    color: #f0f0f0; /* Um branco suave para não competir com o título */
+    color: #f0f0f0;         /* Um branco suave para não competir com o título */
     font-size: 0.9rem;
     font-weight: 600;
-    margin-left: 10px; /* Leve alinhamento com os inputs */
+    margin-left: 10px;        /* Leve alinhamento com os inputs */
 }
 
 /* Estilo para os inputs da tela de cadastro */
 /* Similar ao .form-control-custom, mas sem o espaço extra para o ícone */
 .form-control-register {
     background-color: #FFFFFF;
-    border-radius: 25px; /* Bordas totalmente arredondadas */
+    border-radius: 25px;      /* Bordas totalmente arredondadas */
     border: 1px solid #E0E0E0;
     height: 50px;
-    padding-left: 20px; /* Padding normal */
+    padding-left: 20px;       /* Padding normal */
     font-size: 0.95rem;
     color: #333;
 }
@@ -200,21 +176,17 @@ html {
 }
 
 .form-control-register::placeholder {
-    color: #A0A0A0; /* Reutiliza a cor do placeholder */
+    color: #A0A0A0;         /* Reutiliza a cor do placeholder */
 }
 
 /* Texto do link "Já tem conta?" */
 .login-link-text {
-    color: #f0f0f0; /* Branco suave */
+    color: #f0f0f0;         /* Branco suave */
 }
 
-/*
-==============================================
---- ESTILOS ADICIONAIS PARA PÁGINA HOME ---
-==============================================
-*/
+/*STILOS ADICIONAIS PARA PÁGINA HOME*/
 
-/* --- BARRA DE NAVEGAÇÃO --- */
+/* BARRA DE NAVEGAÇÃO  */
 .navbar {
     background-color: transparent;
     position: absolute;
@@ -226,7 +198,7 @@ html {
 }
 
 .logo-img-nav {
-    width: 50px; /* Tamanho menor para o logo na nav */
+    width: 50px;        /* Tamanho menor para o logo na nav */
     height: auto;
     margin-right: 10px;
 }
@@ -238,7 +210,7 @@ html {
     letter-spacing: 1px;
 }
 
-/* --- ESTILOS DA BUSCA E ÍCONES --- */
+/*  ESTILOS DA BUSCA E ÍCONES --- */
 .search-form {
     position: relative;
 }
@@ -270,7 +242,7 @@ html {
     background: none;
     border: none;
     color: #3E6B3E;
-    font-size: 2rem; /* Tamanho dos ícones de home e menu */
+    font-size: 2rem;        /* Tamanho dos ícones de home e menu */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -278,7 +250,7 @@ html {
     color: #305230;
 }
 
-/* --- ESTILOS DO MENU DROPDOWN --- */
+/* ESTILOS DO MENU DROPDOWN */
 .dropdown-menu {
     border-radius: 15px;
     border: 1px solid #E0E0E0;
@@ -300,7 +272,7 @@ html {
     border-top: 1px solid #e9ecef;
 }
 
-/* --- CONTEÚDO PRINCIPAL (HERO) --- */
+/* CONTEÚDO PRINCIPAL (HERO) */
 .main-container-home {
     min-height: 100vh;
     background-image: url(/Projeto_PHP/assets/Background/Background.png), url(/Projeto_PHP/assets/images/image_6a3b60.jpg); /* Fallback se o primeiro falhar */
@@ -318,9 +290,9 @@ html {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 100%; /* Ajuste a largura conforme necessário */
-    height: 85%; /* Ajuste a altura conforme necessário */
-    background-image: url(/assets/images/Background.png); /* SUBSTITUA PELO CAMINHO CORRETO DO SEU ESTETOSCÓPIO */
+    width: 100%;        /* Ajuste a largura conforme necessário */
+    height: 85%;        /* Ajuste a altura conforme necessário */
+    background-image: url(/assets/images/Background.png); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -330,7 +302,7 @@ html {
 
 .hero-content {
     position: relative;
-    z-index: 2; /* Garante que o texto fique na frente do estetoscópio */
+    z-index: 2;
     color: #000000;
 }
 
@@ -347,7 +319,7 @@ html {
 
 .cta-wrapper {
     display: inline-block;
-    background-color: #689068;/* Reutilizando o estilo da caixa de login */
+    background-color: #689068;      /* Reutilizando o estilo da caixa de login */
     border-radius: 25px;
     padding: 20px 30px;
     margin-top: 15px;
@@ -363,18 +335,13 @@ html {
 }
 .btn-cta:hover {
     color: #FFFFFF;
-    transform: scale(1.05); /* Efeito de zoom suave */
+    transform: scale(1.05);         /* Efeito de zoom suave */
 }
 
-/*
-==================================================
---- ESTILOS PARA PÁGINA DE ATENDIMENTO ---
-==================================================
-*/
+/*ESTILOS PARA PÁGINA DE ATENDIMENTO*/
 
 .atendimento-container {
     min-height: 100vh;
-    /* IMPORTANTE: Coloque aqui o caminho para a sua nova imagem de fundo */
     background-image: url('/Projeto_PHP/assets/images/image_c2f358.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -388,14 +355,14 @@ html {
 
 .atendimento-title {
     font-weight: 700;
-    font-size: 3.5rem; /* Tamanho grande para o título */
+    font-size: 3.5rem;      /* Tamanho grande para o título */
     color: #FFFFFF;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra para garantir a legibilidade sobre a imagem */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);    /* Sombra para garantir a legibilidade sobre a imagem */
 }
 
 .botoes-atendimento {
     display: flex;
-    gap: 20px; /* Espaço entre os botões */
+    gap: 20px;                    /* Espaço entre os botões */
 }
 
 .btn-agendar {
@@ -417,36 +384,15 @@ html {
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* Ajustes para telas menores (mobile) */
-@media (max-width: 767.98px) {
-    .atendimento-title {
-        font-size: 2.5rem; /* Diminui o título no mobile */
-    }
-
-    .botoes-atendimento {
-        flex-direction: column; /* Coloca os botões um embaixo do outro */
-        width: 100%;
-        max-width: 300px; /* Limita a largura no mobile */
-    }
-
-    .btn-agendar {
-        width: 100%; /* Faz os botões ocuparem a largura total do container */
-    }
-}
-
-/*
-==================================================
---- ESTILOS PARA PÁGINA DE ATENDIMENTO ---
-==================================================
-*/
+/*ESTILOS PARA PÁGINA DE ATENDIMENTO*/
 
 .atendimento-page-container {
     content: '';
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 100%; /* Ajuste a largura conforme necessário */
-    height: 85%; /* Ajuste a altura conforme necessário */
+    width: 100%;        /* Ajuste a largura conforme necessário */
+    height: 85%;        /* Ajuste a altura conforme necessário */
     background-image: url('/assets/images/Backgorund_2.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -463,16 +409,12 @@ html {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-/*
-==================================================
---- ESTILOS PARA PÁGINA DE CONSULTA (CARDS) ---
-==================================================
-*/
+/*ESTILOS PARA PÁGINA DE CONSULTA (CARDS)*/
 
 /* Garante que o fundo cubra a página inteira */
 .body-layout {
     background-color: #A0C4A0; /* Cor de fundo base */
-    background-image: url(/assets/images/Background.png); /* Sua imagem de fundo com estetoscópio */
+    background-image: url(/assets/images/Background.png); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -481,13 +423,13 @@ html {
 
 /* Container principal da página */
 .consulta-page-container {
-    padding-top: 120px; /* Espaço para a navbar fixa */
+    padding-top: 120px;             /* Espaço para a navbar fixa */
     padding-bottom: 60px;
 }
 
 /* Título principal da página */
 .page-title.text-white {
-    color: #FFFFFF !important; /* Força a cor branca */
+    color: #FFFFFF !important;  /* Força a cor branca */
     font-weight: 700;
     font-size: 2.8rem;
     margin-bottom: 1rem;
@@ -534,9 +476,9 @@ html {
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    height: 100%; /* Garante que todos os cards na mesma linha tenham a mesma altura */
+    height: 100%;               /* Garante que todos os cards na mesma linha tenham a mesma altura */
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo do card em coluna */
+    flex-direction: column;     /* Organiza o conteúdo do card em coluna */
 }
 
 .consulta-card:hover {
@@ -548,21 +490,21 @@ html {
     font-size: 1.2rem;
     font-weight: 600;
     color: #333;
-    flex-grow: 1; /* Faz este elemento crescer, empurrando o botão para baixo */
+    flex-grow: 1;               /* Faz este elemento crescer, empurrando o botão para baixo */
 }
 
 .card-price {
     font-size: 1.3rem;
     font-weight: 700;
     color: #3E6B3E;
-    margin: 0.5rem 0 1rem 0; /* Espaçamento do preço */
+    margin: 0.5rem 0 1rem 0;    /* Espaçamento do preço */
 }
 
 .btn-marcar {
     background-color: #689068; /* Reutilizando a cor verde de outros botões */
     color: #FFFFFF;
     border: none;
-    border-radius: 50px; /* Pílula */
+    border-radius: 50px; 
     padding: 0.5rem 1.5rem;
     font-weight: 600;
     text-decoration: none;
@@ -582,11 +524,7 @@ html {
     z-index: 1030;
 }
 
-/*
-==================================================
---- ESTILOS PARA PÁGINA DE ATUALIZAÇÃO (MINHA CONTA) ---
-==================================================
-*/
+/*ESTILOS PARA PÁGINA DE ATUALIZAÇÃO (MINHA CONTA)*/
 
 /* Container principal da página */
 .profile-page-container {
@@ -594,12 +532,12 @@ html {
     padding-bottom: 60px;
 }
 
-/* Labels dos campos (Nome, Email, Senha) */
+/* Labels dos campos Nome, Email, Senha */
 .form-label2 {
-    color: #000000; /* Uma cor preta para não competir com o título */
+    color: #000000;           /* Uma cor preta para não competir com o título */
     font-size: 0.9rem;
     font-weight: 600;
-    margin-left: 11px; /* Leve alinhamento com os inputs */
+    margin-left: 11px;          /* Leve alinhamento com os inputs */
 }
 
 /* Card branco que envolve todo o conteúdo */
@@ -607,7 +545,7 @@ html {
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Garante que o conteúdo respeite as bordas arredondadas */
+    overflow: hidden;           /* Garante que o conteúdo respeite as bordas arredondadas */
 }
 
 /* Estilização customizada para as abas */
@@ -619,19 +557,19 @@ html {
 .profile-tabs .nav-item .nav-link {
     border: none;
     border-bottom: 3px solid transparent;
-    color: #6c757d; /* Cor do texto da aba ativa */
+    color: #6c757d;         /* Cor do texto da aba ativa */
     font-weight: 600;
     padding: 1rem 1.5rem;
     transition: all 0.3s ease;
 }
 
 .profile-tabs .nav-item .nav-link:hover {
-    color: #3E6B3E; /* Cor do texto no hover */
+    color: #3E6B3E;         /* Cor do texto no hover */
 }
 
 /* Estilo da aba ATIVA */
 .profile-tabs .nav-item .nav-link.active {
-    color: #3E6B3E; /* Cor do texto da aba ativa */
+    color: #3E6B3E;         /* Cor do texto da aba ativa */
     background-color: #d6d4d4;
     border-bottom: 3px solid #689068; /* Borda verde indicando a aba ativa */
 }
@@ -649,4 +587,116 @@ html {
 
 .btn-save-changes:hover {
     background-color: #5A7F5A; /* Tom mais escuro */
+}
+
+/*BLOCO DE RESPONSIVIDADE GERAL PARA TODO O SITE */
+
+/* --- Para Tablets e Telas Menores (até 992px) --- */
+
+@media (max-width: 991.98px) {
+    
+    /* -- Ajustes Gerais -- */
+    .page-title, .hero-title, .atendimento-title {
+        font-size: 2.2rem;          /* Padroniza um tamanho de título menor para tablets */
+    }
+
+    /* -- Página Consulta (Cards) -- */
+    .consulta-card {
+        padding: 1.2rem;            /* Um pouco menos de padding interno nos cards */
+    }
+
+    /* -- Página Minha Conta (Abas) -- */
+    .profile-tabs .nav-item .nav-link {
+        padding: 0.8rem 1rem;       /* Menos padding nas abas */
+    }
+}
+
+
+/* --- Para Tablets e Celulares (até 768px) --- */
+@media (max-width: 767.98px) {
+
+    /* -- Página Login -- */
+    .image-column {
+        display: none;              /* Esconde a imagem do estetoscópio */
+    }
+    .form-column {
+        min-height: 100vh;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    /* -- Página Consulta (Cards) -- */
+    .consulta-page-container,
+    .profile-page-container {
+        padding-top: 100px;         /* Mais espaço para a navbar fixa */
+        padding-bottom: 40px;
+    }
+
+    /* -- Página Atendimento -- */
+    .botoes-atendimento {
+        flex-direction: column;     /* Empilha os botões */
+        align-items: center;
+        gap: 15px !important;
+    }
+    .botoes-atendimento .btn-entrar {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* -- Página Minha Conta (Abas) -- */
+    .profile-card {
+        padding: 0;                 /* Remove padding do card principal para o conteúdo das abas controlar */
+    }
+    .tab-content {
+        padding: 1.5rem !important; /* Controla o padding interno em telas menores */
+    }
+}
+
+/* Para Celulares Pequenos (até 576px) */
+
+@media (max-width: 576px) {
+
+    /* -- Ajustes Gerais de Fonte -- */
+    .page-title, .hero-title, .atendimento-title {
+        font-size: 1.8rem;      /* Reduz ainda mais os títulos principais */
+    }
+
+    /* -- Página Login/Cadastro -- */
+    .login-form-wrapper {
+        padding: 20px;
+        margin: 15px;           /* Adiciona margem para não colar nas bordas */
+    }
+    .logo-container .logo-text {
+        font-size: 1.5rem;
+    }
+
+    /* -- Página Consulta (Cards) -- */
+    .page-search-input {
+        height: 50px;
+        font-size: 1rem;
+    }
+    .consulta-card {
+        text-align: left;       /* Alinha o texto à esquerda no mobile */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-price {
+        font-size: 1.1rem;
+    }
+    .btn-marcar {
+        padding: 0.4rem 1rem;   /* Botão um pouco menor */
+    }
+    
+    /* -- Página Minha Conta (Abas) -- */
+    .profile-tabs .nav-item .nav-link {
+        padding: 0.7rem 0.5rem; /* Menos padding horizontal nas abas */
+        font-size: 0.8rem;
+    }
+
+    .btn-save-changes {
+        width: 100%;            /* Botão de salvar ocupa a largura toda */
+        padding: 0.8rem;
+    }
 }
