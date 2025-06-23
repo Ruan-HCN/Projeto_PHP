@@ -145,20 +145,62 @@ html {
     object-fit: contain; /* Garante que a imagem inteira seja visível */
 }
 
-/* Ajustes para telas menores */
+/*
+==============================================
+--- REGRAS DE RESPONSIVIDADE ---
+==============================================
+*/
+
+/* Para Tablets e Telas Menores (a partir de 768px para baixo) */
 @media (max-width: 767.98px) {
-    .form-column {
-        min-height: 100vh; /* Garante que ocupe a tela toda em mobile */
-        justify-content: center; /* Centraliza o conteúdo verticalmente */
+    /* A imagem da direita é escondida para focar no formulário */
+    .image-column {
+        display: none;
     }
+
+    /* A coluna do formulário agora ocupa a tela toda */
+    .form-column {
+        min-height: 100vh;          /* Garante que o fundo cubra toda a altura */
+        justify-content: center;    /* Centraliza a caixa do formulário verticalmente */
+        padding: 20px;              /* Adiciona um respiro nas laterais */
+    }
+
+    /* Diminui o tamanho do logo */
+    .logo-container .logo-img {
+        width: 100px;
+        height: 110px;
+    }
+
     .logo-container .logo-text {
         font-size: 1.5rem;
     }
-    .login-form-wrapper {
-        padding: 20px;
+
+    /* Ajusta o padding da caixa do formulário */
+    login-form-wrapper {
+        padding: 25px;
+        max-width: 100%;             /* Permite que o formulário ocupe a largura disponível */
     }
-    .stethoscope-img {
-        display: none; /* Ocultar imagem em telas muito pequenas se já estiver no d-none d-md-flex */
+}
+
+
+/* Para Celulares Pequenos (a partir de 480px para baixo) */
+@media (max-width: 480px) {
+    /* Diminui ainda mais o título para caber bem na tela */
+    .logo-container .logo-text {
+        font-size: 1.3rem;
+    }
+
+    /* Diminui a fonte dos campos e links para não parecerem apertados */
+    .form-control-custom {
+        font-size: 0.85rem;
+    }
+
+    .btn-entrar {
+        font-size: 0.9rem;
+    }
+
+    .forgot-password-link, .sign-up-text {
+        font-size: 0.8rem;
     }
 }
 
