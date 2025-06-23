@@ -162,11 +162,7 @@ html {
     }
 }
 
-/*
-==============================================
---- ESTILOS ADICIONAIS PARA PÁGINA DE CADASTRO ---
-==============================================
-*/
+/*ESTILOS ADICIONAIS PARA PÁGINA DE CADASTRO*/
 
 /* Título "Cadastro de Usuário" */
 .form-title {
@@ -206,4 +202,40 @@ html {
 /* Texto do link "Já tem conta?" */
 .login-link-text {
     color: #f0f0f0; /* Branco suave */
+}
+
+/*RESPONSIVIDADE PARA PÁGINA DE CADASTRO*/
+
+/* Para Tablets e Celulares (telas menores que 768px) */
+@media (max-width: 767.98px) {
+
+    /* Na página de cadastro, o formulário é centralizado.
+       A classe .main-container do seu base.css já faz isso.
+       Aqui, apenas garantimos que a caixa do formulário não cole nas bordas. */
+    .login-form-wrapper {
+        margin: 20px;
+        padding: 25px;
+    }
+}
+
+
+/* Para Celulares Pequenos (telas menores que 480px) */
+@media (max-width: 480px) {
+
+    .login-form-wrapper {
+        padding: 20px; /* Reduz um pouco mais o padding interno */
+    }
+
+    .form-title {
+        font-size: 1.5rem; /* Diminui o título principal */
+    }
+
+    .form-label {
+        font-size: 0.85rem; /* Diminui o rótulo dos campos */
+    }
+    
+    .form-control-register {
+        height: 45px; /* Altura dos campos um pouco menor */
+        font-size: 0.9rem;
+    }
 }

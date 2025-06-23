@@ -76,17 +76,6 @@ form .form-label {
     color: #fff !important;
 }
 
-@media (max-width: 768px) {
-    .consulta-page-container {
-        padding-top: 30px;
-    }
-
-    .btn-entrar {
-        width: 100%;
-    }
-}
-
-
 /*RESPONSIVIDADE*/
 
 /* Para Tablets e Celulares (telas menores que 768px) */
