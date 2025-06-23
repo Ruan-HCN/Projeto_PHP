@@ -1,11 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard do Usuário</title>
-    <link rel="stylesheet" href="/Projeto_PHP/assets/css/dashboardUsuario.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        body {
+            background-image: url('../../assets/images/Background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #94B994;
+            /* Verde médio, seguindo padrão */
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #3E6B3E;
+            /* Verde escuro para títulos */
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        p {
+            color: #333;
+            margin: 5px 0;
+            font-weight: 500;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            background-color: #e9ecef;
+            margin-bottom: 8px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 5px 5px 0 0;
+            padding: 12px 20px;
+            background-color: #689068;
+            /* Verde padrão dos botões */
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #5A7F5A;
+            transform: scale(1.02);
+        }
+
+        .btn.excluir {
+            background-color: #dc3545;
+        }
+
+        .btn.excluir:hover {
+            background-color: #a71d2a;
+        }
+
+        .btn.sair {
+            background-color: #6c757d;
+        }
+
+        .btn.sair:hover {
+            background-color: #4c5258;
+        }
+
+        /* Responsividade */
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 30px 15px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .acoes .btn {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 20px 10px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            p,
+            ul li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
 </head>
+
 <body>
     <div class="container">
         <h1>Bem-vindo, <span id="nomeUsuario">Usuário</span>!</h1>
@@ -30,6 +182,7 @@
         </div>
     </div>
 
-    <script src="/Projeto_PHP/assets/js/dashboardUsuario.js"></script>
+    <script src="../../assets/js/dashboardUsuario.js"></script>
 </body>
+
 </html>
