@@ -16,11 +16,39 @@ class ConsultaController {
     }
 
     public function require_read() {
-        require 'views/consulta/readConsulta.html';
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        $usuario_id = $_SESSION['usuario_id'];
+        $consultas = $this->consultaModel->listarPorUsuario($usuario_id);
+        require 'views/consulta/readConsulta.php';
     }
 
     public function require_update() {
-        require 'views/consulta/updateConsulta.html';
+        session_start();
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $usuario_id = $_SESSION['usuario_id'];
+            $consulta_id = $_POST['consulta_id'] ?? null;
+
+            if (!$consulta_id) {
+                echo "Consulta não informada.";
+                exit;
+            }
+
+            $consulta = $this->consultaModel->buscarPorId($consulta_id, $usuario_id);
+
+            if (!$consulta) {
+                echo "Consulta não encontrada.";
+                exit;
+            }
+
+            require 'views/consulta/updateConsulta.php';
+        } else {
+            echo "Método inválido.";
+            exit;
+        }
     }
 
     // Ações

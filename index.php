@@ -89,10 +89,10 @@ switch ($rota) {
 
     case 'consulta_read':
         $controller = new ConsultaController();
-        $controller->require_read();
+        $controller->read();
         break;
 
-    case 'consulta_update':
+    case 'consulta_update_form':  // <-- NOVO: Exibir o formulário de edição
         $controller = new ConsultaController();
         $controller->require_update();
         break;
@@ -103,9 +103,9 @@ switch ($rota) {
         $controller->create();
         break;
 
-    case 'consulta_read_list':
+    case 'consulta_list':
         $controller = new ConsultaController();
-        $controller->read();
+        $controller->require_read();
         break;
 
     case 'consulta_update_post':
