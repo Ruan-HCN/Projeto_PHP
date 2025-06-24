@@ -395,8 +395,8 @@
 
     <header class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="../../assets/images/logo_clinica-removebg.png" alt="Check-Up Time Logo"
+            <a class="navbar-brand d-flex align-items-center" href="index.php?rota=dashboard">
+                <img src="/Projeto_PHP/assets/images/logo_clinica-removebg.png" alt="Check-Up Time Logo"
                     class="logo-img-nav">
                 <span class="logo-text-nav"></span>
             </a>
@@ -413,21 +413,13 @@
                         <i class="bi bi-list"></i>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="/views/auth/home.html">Home</a></li>
-                        <li><a class="dropdown-item" href="/views/auth/atendimento.html">Agendar</a></li>
-                        <li><a class="dropdown-item" href="/views/auth/consulta.html">Minhas consultas</a></li>
-                        <li><a class="dropdown-item" href="/views/auth/exame.html">Serviços</a></li>
+                        <li><a class="dropdown-item" href="index.php?rota=dashboard">Home</a></li>
+                        <li><a class="dropdown-item" href="index.php?rota=consulta_create">Agendar</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
                         <li><a class="dropdown-item" href="index.php?rota=dashboard_usuario">Minha conta</a></li>
-                        <li><a class="dropdown-item" href="#">Endereço</a></li>
-                        <li><a class="dropdown-item" href="#">Resultados</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Privacidade</a></li>
-                        <li><a class="dropdown-item" href="#">Sobre nós</a></li>
+                        <li><a class="dropdown-item" href="index.php?rota=consulta_list">Minhas consultas</a></li>
                     </ul>
                 </div>
             </div>

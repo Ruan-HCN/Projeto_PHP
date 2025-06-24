@@ -20,13 +20,25 @@ class ConsultaController {
             session_start();
         }
 
+        if (!isset($_SESSION['usuario_id'])) {
+            echo "Acesso negado.";
+            exit;
+        }
+
         $usuario_id = $_SESSION['usuario_id'];
         $consultas = $this->consultaModel->listarPorUsuario($usuario_id);
         require 'views/consulta/readConsulta.php';
     }
 
     public function require_update() {
-        session_start();
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        if (!isset($_SESSION['usuario_id'])) {
+            echo "Acesso negado.";
+            exit;
+        }
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $usuario_id = $_SESSION['usuario_id'];
@@ -54,7 +66,14 @@ class ConsultaController {
     // Ações
     public function create() {
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
+            if (session_status() == PHP_SESSION_NONE) {
             session_start();
+        }
+
+        if (!isset($_SESSION['usuario_id'])) {
+            echo "Acesso negado.";
+            exit;
+        }
 
             $usuario_id = $_SESSION['usuario_id'];
 
@@ -79,15 +98,30 @@ class ConsultaController {
     }
 
     public function read() {
-        session_start();
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        if (!isset($_SESSION['usuario_id'])) {
+            echo "Acesso negado.";
+            exit;
+        }
+
         $usuario_id = $_SESSION['usuario_id'];
 
         $consultas = $this->consultaModel->listarPorUsuario($usuario_id);
-        require 'views/consulta/listarConsultas.php';
+        require 'views/consulta/readConsulta.php';
     }
 
     public function update() {
-        session_start();
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        if (!isset($_SESSION['usuario_id'])) {
+            echo "Acesso negado.";
+            exit;
+        }
 
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $usuario_id = $_SESSION['usuario_id'];
@@ -108,7 +142,14 @@ class ConsultaController {
     }
 
     public function delete() {
-        session_start();
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        if (!isset($_SESSION['usuario_id'])) {
+            echo "Acesso negado.";
+            exit;
+        }
 
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $usuario_id = $_SESSION['usuario_id'];

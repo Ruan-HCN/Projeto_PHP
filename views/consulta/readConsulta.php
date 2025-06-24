@@ -45,9 +45,9 @@
             color: white;
         }
 
-        .btn-voltar:hover{
+        .btn-voltar:hover {
             transform: scale(1.1);
-            background-color:rgb(89, 165, 89);
+            background-color: rgb(89, 165, 89);
             color: #fff;
         }
     </style>
@@ -73,17 +73,17 @@
                 <tbody>
                     <?php foreach ($consultas as $consulta): ?>
                         <tr>
-                            <td><?php echo htmlspecialchars($consulta['area_atuacao']); ?></td>
-                            <td><?php echo htmlspecialchars($consulta['medico']); ?></td>
-                            <td><?php echo htmlspecialchars($consulta['horario']); ?></td>
+                            <td><?= htmlspecialchars($consulta['area_atuacao']) ?></td>
+                            <td><?= htmlspecialchars($consulta['medico']) ?></td>
+                            <td><?= htmlspecialchars($consulta['horario']) ?></td>
                             <td>
                                 <form action="index.php?rota=consulta_update_form" method="POST" style="display:inline;">
-                                    <input type="hidden" name="consulta_id" value="<?php echo htmlspecialchars($consulta['id']); ?>" />
+                                    <input type="hidden" name="consulta_id" value="<?= htmlspecialchars($consulta['consulta_id']) ?>" />
                                     <button type="submit" class="btn btn-sm btn-editar">Editar</button>
                                 </form>
 
                                 <form action="index.php?rota=consulta_delete_post" method="POST" style="display:inline;" onsubmit="return confirm('Tem certeza que deseja excluir esta consulta?');">
-                                    <input type="hidden" name="consulta_id" value="<?php echo htmlspecialchars($consulta['id']); ?>" />
+                                    <input type="hidden" name="consulta_id" value="<?= htmlspecialchars($consulta['consulta_id']) ?>" />
                                     <button type="submit" class="btn btn-sm btn-excluir">Excluir</button>
                                 </form>
                             </td>

@@ -45,7 +45,7 @@ switch ($rota) {
 
     // === Dashboard ===
     case 'dashboard':
-        header('Location: ./views/auth/home.html');
+        require 'views/auth/home.php';
         break;
     
     // === Rotas de Usuario ===    

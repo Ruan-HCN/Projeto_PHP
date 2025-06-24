@@ -21,7 +21,7 @@ class Consulta {
 
     // 🔍 Busca uma consulta específica por ID e usuário
     public function buscarPorId($consulta_id, $usuario_id) {
-        $sql = "SELECT * FROM $this->table WHERE id = ? AND usuario_id = ?";
+        $sql = "SELECT * FROM $this->table WHERE consulta_id = ? AND usuario_id = ?";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute([$consulta_id, $usuario_id]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
@@ -37,14 +37,14 @@ class Consulta {
     // ✅ Atualizar consulta
     public function atualizar($consulta_id, $usuario_id, $area_atuacao, $medico, $horario) {
         $sql = "UPDATE $this->table SET area_atuacao = ?, medico = ?, horario = ? 
-                WHERE id = ? AND usuario_id = ?";
+                WHERE consulta_id = ? AND usuario_id = ?";
         $stmt = $this->conn->prepare($sql);
         return $stmt->execute([$area_atuacao, $medico, $horario, $consulta_id, $usuario_id]);
     }
 
     // ✅ Excluir consulta
     public function excluir($consulta_id, $usuario_id) {
-        $sql = "DELETE FROM $this->table WHERE id = ? AND usuario_id = ?";
+        $sql = "DELETE FROM $this->table WHERE consulta_id = ? AND usuario_id = ?";
         $stmt = $this->conn->prepare($sql);
         return $stmt->execute([$consulta_id, $usuario_id]);
     }

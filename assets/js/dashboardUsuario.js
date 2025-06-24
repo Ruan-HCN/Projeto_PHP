@@ -10,17 +10,19 @@ document.addEventListener('DOMContentLoaded', () => {
             const usuario = data.usuario;
             const consultas = data.consultas;
 
+            // Preenche os dados do usuário
             document.getElementById('nomeUsuario').textContent = usuario.nome;
             document.getElementById('nome').textContent = usuario.nome;
             document.getElementById('email').textContent = usuario.email;
 
+            // Lista as consultas
             const lista = document.getElementById('listaConsultas');
             lista.innerHTML = '';
 
             if (consultas.length > 0) {
                 consultas.forEach(consulta => {
                     const li = document.createElement('li');
-                    li.textContent = `Paciente: ${consulta.paciente} | Área: ${consulta.area_atuacao} | Médico: ${consulta.medico} | Horário: ${consulta.horario}`;
+                    li.textContent = `Área: ${consulta.area_atuacao} | Médico: ${consulta.medico} | Horário: ${consulta.horario}`;
                     lista.appendChild(li);
                 });
             } else {
