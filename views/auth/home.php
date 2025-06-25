@@ -400,29 +400,6 @@
                     class="logo-img-nav">
                 <span class="logo-text-nav"></span>
             </a>
-
-            <div class="d-flex align-items-center">
-                <form class="search-form me-3 d-none d-lg-flex" role="search">
-                    <input class="form-control search-input" type="search" placeholder="Pesquisar..."
-                        aria-label="Search">
-                    <button class="search-btn" type="submit"><i class="bi bi-search"></i></button>
-                </form>
-
-                <div class="dropdown">
-                    <button class="nav-icon" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-list"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="index.php?rota=dashboard">Home</a></li>
-                        <li><a class="dropdown-item" href="index.php?rota=consulta_create">Agendar</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="index.php?rota=dashboard_usuario">Minha conta</a></li>
-                        <li><a class="dropdown-item" href="index.php?rota=consulta_list">Minhas consultas</a></li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </header>
 

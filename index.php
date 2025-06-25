@@ -43,6 +43,13 @@ switch ($rota) {
         $controller->authRegister();
         break;
 
+    case 'logout':
+        session_start();
+        session_destroy();
+        header('Location: index.php?rota=login');
+        exit;
+        break;
+
     // === Dashboard ===
     case 'dashboard':
         require 'views/auth/home.php';
